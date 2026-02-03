@@ -2,7 +2,7 @@
 
 Work Log: Tuesday Feb 3
 
-**Keegan**
+Keegan
 
 Created Github space
 
@@ -10,3 +10,4 @@ Added Kale to contributers
 
 Created the html \& css files
 
+Kale
