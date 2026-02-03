@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+#content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.smalltext {
+    font-size: 14px;
+}
+
+#save-location-input {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#save-file-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
