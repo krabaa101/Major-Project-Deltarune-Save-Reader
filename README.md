@@ -10,6 +10,5 @@ Created Github space
 
 Added Kale to contributers
 
-Created the html \& css files
-
 Kale
+Created site skeleton
