@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dRuneTrackerStylesheet.css">
     <source src="dRuneTracker.js">
 </head>
-<body onload="loadScripts()">
+<body onload="onload">
     <div id="content">
         <h1 id="h1-title">Save Completion Tracker</h1>
         <h2 id="h2-subtitle">For Deltarune</h2>
@@ -38,13 +38,12 @@
             
             <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
             <input id="saveInput" type="file" accept="file/*" value="">
+
             <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
             <p id="saveConfirmer">No file input yet.</p>
 
             <!-- Button to confirm file (I attempted to make a localStorage value that holds the filepath, but apparently input type: file values use a fakepath to keep user filepaths private.) -->
-            <button id="Confirm" onclick="
-                readFile()
-            ">Confirm!</button>
+            <button id="Confirm">Confirm!</button>
        </div>
 
 
