@@ -1,19 +1,18 @@
 const docIdGet = document.getElementById;
 
-const input = document.getElementById("saveInput");
-const fileInput = input.files;
+const input = document.getElementById('saveInput');
 
-const inButton = document.getElementById(Confirm);
-inButton.addEventListener(click, readFile);
+const inButton = document.getElementById("confirmButton");
+inButton.addEventListener('click', readFile);
 
 alert("Is this even working")
 
 function readFile()
 {
-    docIdGet("saveConfirmer").innerHTML = "This is the element that i need to edit.";   
+    docIdGet('saveConfirmer').innerHTML = "This is the element that i need to edit.";   
 }
 
-onload()
+onload(document)
 {
-    alert("Is this even working")
+    alert('Is this even working')
 }

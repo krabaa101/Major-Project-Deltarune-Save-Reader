@@ -6,8 +6,10 @@
     <title>Deltarune Save Reader</title>
     <link rel="stylesheet" href="dRuneTrackerStylesheet.css">
     <source src="dRuneTracker.js">
+    <script src="dRuneTracker.js"></script>
 </head>
-<body onload="onload">
+<body>
+    
     <div id="content">
         <h1 id="h1-title">Save Completion Tracker</h1>
         <h2 id="h2-subtitle">For Deltarune</h2>
@@ -43,7 +45,7 @@
             <p id="saveConfirmer">No file input yet.</p>
 
             <!-- Button to confirm file (I attempted to make a localStorage value that holds the filepath, but apparently input type: file values use a fakepath to keep user filepaths private.) -->
-            <button id="Confirm">Confirm!</button>
+            <button id="confirmButton">Confirm!</button>
        </div>
 
 
@@ -52,7 +54,5 @@
     <p>Time Played</p> <!--JS displays data here-->
     <!--More Random Fun save facts here:-->
     </div>
-
-
 </body>
 </html>
