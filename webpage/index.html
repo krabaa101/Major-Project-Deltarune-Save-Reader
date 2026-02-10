@@ -6,8 +6,10 @@
     <title>Deltarune Save Reader</title>
     <link rel="stylesheet" href="dRuneTrackerStylesheet.css">
     <source src="dRuneTracker.js">
+    <script src="dRuneTracker.js"></script>
 </head>
 <body>
+    
     <div id="content">
         <h1 id="h1-title">Save Completion Tracker</h1>
         <h2 id="h2-subtitle">For Deltarune</h2>
@@ -24,14 +26,26 @@
 
         <p class="smalltext">
             Choose 
-            <strong>both save files</strong>
-             then drag and drop, or select directly in the box below 
+            <strong>filech1_#</strong>
+             then drag and drop, or select directly in the box below. 
+        </p>
+
+        <p class="smalltext">
+            The number on the save file is which slot the file is saved in, 1, 2, or 3. filech1_9 is your latest autosave.
         </p>
         
         <p></p> <!--Empty paragraph for spacing.-->
 
         <div id="save-file-input">
-        <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
+            
+            <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
+            <input id="saveInput" type="file" accept="file/*" value="">
+
+            <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
+            <p id="saveConfirmer">No file input yet.</p>
+
+            <!-- Button to confirm file (I attempted to make a localStorage value that holds the filepath, but apparently input type: file values use a fakepath to keep user filepaths private.) -->
+            <button id="confirmButton">Confirm!</button>
        </div>
 
 
@@ -40,7 +54,5 @@
     <p>Time Played</p> <!--JS displays data here-->
     <!--More Random Fun save facts here:-->
     </div>
-
-
 </body>
 </html>

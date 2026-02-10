@@ -33,3 +33,7 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#saveConfirmer {
+    font-size: 14px;
+}
