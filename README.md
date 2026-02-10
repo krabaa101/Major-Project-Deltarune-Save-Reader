@@ -14,7 +14,7 @@ Added Kale to contributers
 
 
 Kale
-Created site skeleton
+Created first html site skeleton
 
 
 
