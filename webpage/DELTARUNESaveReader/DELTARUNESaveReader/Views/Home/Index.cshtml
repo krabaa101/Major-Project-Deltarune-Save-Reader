@@ -17,8 +17,42 @@
     </head>
     
     <body>
+        
+        <div id="content">
+            <h1 id="h1-title">Save Completion Tracker</h1>
+            <h2 id="h2-subtitle">For Deltarune</h2>
 
-    
+            <p class="smalltext"><!-- write banner of hrefs here: steam guide, github --></p>
+
+            <div class="tooltips">
+                <!-- pasteable path for "noob users." -->
+                <input id="save-location-input" value="%LOCALAPPDATA%\DELTARUNE" readonly="readonly">
+
+                <span class="tooltips-text" id="save-location-input-tooltips">
+                    <br> <!-- Add JS on-hover for tooltips-text class -->
+                    "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
+                </span>
+            </div>
+
+            <p class="smalltext">
+                Choose
+                <strong>both save files</strong>
+                then drag and drop, or select directly in the box below
+            </p>
+
+            <p></p> <!--Empty paragraph for spacing.-->
+
+            <div id="save-file-input">
+                <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
+            </div>
+
+
+            <h2 id="h2-game-status">Game completion status:</h2> <!--  Add % variable through JS here (float) -->
+
+            <p>Time Played</p> <!--JS displays data here-->
+            <!--More Random Fun save facts here:-->
+        </div>
+
     </body>
 
 
