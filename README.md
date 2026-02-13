@@ -21,10 +21,9 @@ Created first html site skeleton
 Work Log: Feb 10
 
 Keegan
-
-
-
-
+- Populated index.cshtml
+- Added css implementation to ASP app
+- Made javascript code (not working)
 
 Kale
 
