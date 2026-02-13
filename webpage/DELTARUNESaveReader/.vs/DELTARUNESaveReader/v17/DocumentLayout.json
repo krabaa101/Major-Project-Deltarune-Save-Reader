@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Keega\\Deltarune Save Reader\\webpage\\DELTARUNESaveReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|c:\\users\\keega\\deltarune save reader\\webpage\\deltarunesavereader\\deltarunesavereader\\wwwroot\\css\\drunetrackerstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|solutionrelative:deltarunesavereader\\wwwroot\\css\\drunetrackerstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|c:\\users\\keega\\deltarune save reader\\webpage\\deltarunesavereader\\deltarunesavereader\\wwwroot\\js\\drunetracker.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|solutionrelative:deltarunesavereader\\wwwroot\\js\\drunetracker.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|c:\\users\\keega\\deltarune save reader\\webpage\\deltarunesavereader\\deltarunesavereader\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|solutionrelative:deltarunesavereader\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|c:\\users\\keega\\deltarune save reader\\webpage\\deltarunesavereader\\deltarunesavereader\\wwwroot\\css\\drunetrackerstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|solutionrelative:deltarunesavereader\\wwwroot\\css\\drunetrackerstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787BD309-47E4-4A60-9F64-F36690FBD791}|DELTARUNESaveReader\\DELTARUNESaveReader.csproj|c:\\users\\keega\\deltarune save reader\\webpage\\deltarunesavereader\\deltarunesavereader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dRuneTracker.js",
+              "DocumentMoniker": "C:\\Users\\Keega\\Deltarune Save Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\wwwroot\\js\\dRuneTracker.js",
+              "RelativeDocumentMoniker": "DELTARUNESaveReader\\wwwroot\\js\\dRuneTracker.js",
+              "ToolTip": "C:\\Users\\Keega\\Deltarune Save Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\wwwroot\\js\\dRuneTracker.js*",
+              "RelativeToolTip": "DELTARUNESaveReader\\wwwroot\\js\\dRuneTracker.js*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-13T21:40:47.397Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -32,14 +49,14 @@
               "RelativeDocumentMoniker": "DELTARUNESaveReader\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Keega\\Deltarune Save Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "DELTARUNESaveReader\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-10T16:51:14.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "dRuneTrackerStylesheet.css",
               "DocumentMoniker": "C:\\Users\\Keega\\Deltarune Save Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\wwwroot\\css\\dRuneTrackerStylesheet.css",
               "RelativeDocumentMoniker": "DELTARUNESaveReader\\wwwroot\\css\\dRuneTrackerStylesheet.css",
@@ -52,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Keega\\Deltarune Save Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\Program.cs",
               "RelativeDocumentMoniker": "DELTARUNESaveReader\\Program.cs",
