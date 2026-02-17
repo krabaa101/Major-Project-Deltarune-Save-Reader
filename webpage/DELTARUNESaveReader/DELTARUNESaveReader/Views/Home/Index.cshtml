@@ -37,8 +37,10 @@
         </p>
 
         <p class="smalltext">
-            The number on the save file is which slot the file is saved in, 1, 2, or 3. filech1_9 is your latest autosave.
+            The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
         </p>
+
+        <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
 
         <p></p> <!--Empty paragraph for spacing.-->
 
@@ -54,13 +56,52 @@
             <button id="confirmButton">Confirm!</button>
         </div>
 
+        <div id="ResultDiv">
+            <h2 id="h2-game-status">Game completion status:</h2> <!--  Add % variable through JS here (float) -->
+        
 
-        <h2 id="h2-game-status">Game completion status:</h2> <!--  Add % variable through JS here (float) -->
+            <p>Time Played</p> <!--JS displays data here-->
+            <!--More Random Fun save facts here:-->
 
-        <p>Time Played</p> <!--JS displays data here-->
-        <!--More Random Fun save facts here:-->
+            <p id="testP">wow</p>
+        </div>
     </div>
-    <script src="~/js/dRuneTracker.js"></script>
+    <script>
+        const docIdGet = document.getElementById;
+        const input = document.getElementById('saveInput');
+        const inButton = document.getElementById("confirmButton");
+
+        inButton.addEventListener("click", readFile);
+
+        function readFile() 
+        {
+            const saveFile = document.getElementById("saveInput").files[0];
+            const saveReader = new FileReader();
+
+            //Trying the code from mdn
+            saveReader.addEventListener("load", () => {
+            document.getElementById("testP").innerText = saveReader.result;
+            });
+
+            if (saveFile.name.startsWith("filech1_") == true)
+            {
+                document.getElementById("saveConfirmer").innerText = "Valid save file!";
+                
+                //document.getElementById("testP").innerText = saveReader.result;
+                saveReader.readAsText(saveFile);
+            }
+            else if (saveFile.name.startsWith("filech2_") == true || saveFile.name.startsWith("filech3_") == true || saveFile.name.startsWith("filech4_") == true)
+            {
+                document.getElementById("saveConfirmer").innerText = "No late chapter support.";
+            }
+            else
+            {
+                document.getElementById("saveConfirmer").innerText = "Not a deltarune savefile";
+            }
+            
+        }
+        
+    </script>
 </body>
 </html>
 
