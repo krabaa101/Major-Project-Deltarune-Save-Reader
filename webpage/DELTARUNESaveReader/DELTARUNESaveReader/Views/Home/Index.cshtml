@@ -78,11 +78,17 @@
             const saveFile = document.getElementById("saveInput").files[0];
             const saveReader = new FileReader();
 
+            //Trying the code from mdn
+            saveReader.addEventListener("load", () => {
+            document.getElementById("testP").innerText = saveReader.result;
+            });
+
             if (saveFile.name.startsWith("filech1_") == true)
             {
                 document.getElementById("saveConfirmer").innerText = "Valid save file!";
+                
+                //document.getElementById("testP").innerText = saveReader.result;
                 saveReader.readAsText(saveFile);
-                document.getElementById("testP").innerText = saveReader.result;
             }
             else if (saveFile.name.startsWith("filech2_") == true || saveFile.name.startsWith("filech3_") == true || saveFile.name.startsWith("filech4_") == true)
             {
