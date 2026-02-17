@@ -21,16 +21,26 @@ Created first html site skeleton
 Work Log: Feb 10
 
 Keegan
-- Populated index.cshtml
-- Added css implementation to ASP app
-- Made javascript code (not working)
+
+* Populated index.cshtml
+* Added css implementation to ASP app
+* Made javascript code (not working)
 
 Kale
 
-- Created ASP.NET App (10 minutes)
-- Imported old code into MVC folders for organization (20 minutes)
-- Tinkered with databases and decided a no-database solutioun was the best for our case (1 hour)
-- Created README.md to guide Keegan through my ASP workspace (5 minutes)
-- Researched YouTube videos and learnt how to convert C# objects to JSON (30 minutes)
+* Created ASP.NET App (10 minutes)
+* Imported old code into MVC folders for organization (20 minutes)
+* Tinkered with databases and decided a no-database solutioun was the best for our case (1 hour)
+* Created README.md to guide Keegan through my ASP workspace (5 minutes)
+* Researched YouTube videos and learnt how to convert C# objects to JSON (30 minutes)
+
+
+
+Work Log: Feb 17
+
+* Got scripts running on the site
+* Made rudimentary file check
+* Added test save file reader.
+
 
 
