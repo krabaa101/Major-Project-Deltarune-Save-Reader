@@ -83,6 +83,14 @@
             saveReader.addEventListener("load", () => {
                 //document.getElementById("testP").innerText = saveReader.result;
                 const saveArray = saveReader.result.split(/\r\n/);
+                var time = parseInt(saveArray[10317]) / 30;
+                var time = Math.floor(time);
+                var sec = time - 14400 - 780;
+                var min = time - 14400 - 35;
+                var min = min/60;
+                var hour = time - 780 - 35;
+                var hour = hour / 60 / 60;
+                document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
                 document.getElementById("fileName").innerText = "Name: " + saveArray[0];
             });
 
