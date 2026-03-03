@@ -60,12 +60,13 @@
             <h2 id="h2-game-status">Game completion status:</h2> <!--  Add % variable through JS here (float) -->
         
 
-            <p>Time Played</p> <!--JS displays data here-->
+            <p id="timeText">Time Played: </p> <!--JS displays data here-->
             <!--More Random Fun save facts here:-->
-
-            <p id="testP">wow</p>
+            <p id="fileName">Name: </p>
+            <p id="testP"></p>
         </div>
     </div>
+
     <script>
         const docIdGet = document.getElementById;
         const input = document.getElementById('saveInput');
@@ -78,24 +79,35 @@
             const saveFile = document.getElementById("saveInput").files[0];
             const saveReader = new FileReader();
 
-            //Trying the code from mdn
+            //!! CODE FOR PARSING SAVE IS HERE !!
             saveReader.addEventListener("load", () => {
-            document.getElementById("testP").innerText = saveReader.result;
+                //document.getElementById("testP").innerText = saveReader.result;
+                const saveArray = saveReader.result.split(/\r\n/);
+                var time = parseInt(saveArray[10317]) / 30;
+                var time = Math.floor(time);
+                var sec = time - 14400 - 780;
+                var min = time - 14400 - 35;
+                var min = min/60;
+                var hour = time - 780 - 35;
+                var hour = hour / 60 / 60;
+                document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
+                document.getElementById("fileName").innerText = "Name: " + saveArray[0];
             });
 
             if (saveFile.name.startsWith("filech1_") == true)
             {
                 document.getElementById("saveConfirmer").innerText = "Valid save file!";
-                
+
                 //document.getElementById("testP").innerText = saveReader.result;
                 saveReader.readAsText(saveFile);
+                
             }
             else if (saveFile.name.startsWith("filech2_") == true || saveFile.name.startsWith("filech3_") == true || saveFile.name.startsWith("filech4_") == true)
-            {
+            { // Unsupported Chapter
                 document.getElementById("saveConfirmer").innerText = "No late chapter support.";
             }
             else
-            {
+            { //Not Save File
                 document.getElementById("saveConfirmer").innerText = "Not a deltarune savefile";
             }
             
