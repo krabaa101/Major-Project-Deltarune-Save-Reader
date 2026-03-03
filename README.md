@@ -36,7 +36,9 @@ Kale
 
 
 
-Work Log: Feb 17
+Work Log: Feb 17 
+
+Keegan
 
 * Got scripts running on the site
 * Made rudimentary file check
@@ -44,3 +46,10 @@ Work Log: Feb 17
 
 
 
+Work Log: Mar 3
+
+Keegan
+
+* Figured out save parsing
+* Display save name
+* Display time played
