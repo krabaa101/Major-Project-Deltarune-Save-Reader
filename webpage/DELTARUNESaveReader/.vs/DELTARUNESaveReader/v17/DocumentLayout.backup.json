@@ -38,8 +38,7 @@
               "RelativeToolTip": "DELTARUNESaveReader\\wwwroot\\js\\dRuneTracker.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-13T21:40:47.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-13T21:40:47.397Z"
             },
             {
               "$type": "Document",
@@ -47,9 +46,9 @@
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "DELTARUNESaveReader\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "DELTARUNESaveReader\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAFEAAAAsAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "DELTARUNESaveReader\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwFUAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-10T16:51:14.387Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "DELTARUNESaveReader\\wwwroot\\css\\dRuneTrackerStylesheet.css",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-02-10T16:49:21.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-10T16:49:21.896Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "DELTARUNESaveReader\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAnwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T16:48:06.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-10T16:48:06.126Z"
             }
           ]
         }
