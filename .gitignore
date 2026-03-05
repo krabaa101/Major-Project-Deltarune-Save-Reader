@@ -1,0 +1,8 @@
+# ignore temp folders
+temp/
+
+# ignore log files
+.log
+
+# ignore net folders
+net9.0/
