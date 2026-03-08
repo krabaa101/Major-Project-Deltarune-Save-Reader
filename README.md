@@ -1,4 +1,4 @@
-# Major-Project-Deltarune-Save-Reader
+8# Major-Project-Deltarune-Save-Reader
 
 Work Log: Tuesday Feb 3
 Keegan Created Github file
@@ -53,3 +53,12 @@ Keegan
 * Figured out save parsing
 * Display save name
 * Display time played
+
+Work log: Mar 7
+
+Kale
+* Found reliable source to locate save indexing
+* Revamped double assigned "var" variables to single assigned "let" variables
+* Displayed money
+* Displayed level
+* Displayed xp
