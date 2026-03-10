@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deltarune Save Reader</title>
     <link rel="stylesheet" href="~/css/dRuneTrackerStylesheet.css">
-    
+
 </head>
 <body>
     <div id="content">
@@ -58,12 +58,12 @@
 
         <div id="ResultDiv">
             <h2 id="h2-game-status">Game completion status:</h2> <!--  Add % variable through JS here (float) -->
-        
+
 
             <p id="timeText">Time Played: </p> <!--JS displays data here-->
             <!--More Random Fun save facts here:-->
             <p id="fileName">Name: </p>
-            <p id="testP"></p>
+            <p id="playerStats">Player stats: </p>
         </div>
     </div>
 
@@ -74,7 +74,7 @@
 
         inButton.addEventListener("click", readFile);
 
-        function readFile() 
+        function readFile()
         {
             const saveFile = document.getElementById("saveInput").files[0];
             const saveReader = new FileReader();
@@ -82,16 +82,29 @@
             //!! CODE FOR PARSING SAVE IS HERE !!
             saveReader.addEventListener("load", () => {
                 //document.getElementById("testP").innerText = saveReader.result;
-                const saveArray = saveReader.result.split(/\r\n/);
-                var time = parseInt(saveArray[10317]) / 30;
-                var time = Math.floor(time);
-                var sec = time - 14400 - 780;
-                var min = time - 14400 - 35;
-                var min = min/60;
-                var hour = time - 780 - 35;
-                var hour = hour / 60 / 60;
-                document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
+
+                // assigning array indexes to variables
+                    const saveArray = saveReader.result.split(/\r\n/);
+                    let time = parseInt(saveArray[10317]) / 30;
+                    time = Math.floor(time);
+                    const sec = time - 14400 - 780;
+                    let min = time - 14400 - 35;
+                    min = min/60;
+                    let hour = time - 780 - 35;
+                    hour = hour / 60 / 60; // used let instead of var as i believe it's more efficient, and u were re-assigning variables
+
+
+                    const money = parseInt(saveArray[10]);
+                    const xp = parseInt(saveArray[11]);
+                    const lv = parseInt(saveArray[12]);
+
+                // displaying information
                 document.getElementById("fileName").innerText = "Name: " + saveArray[0];
+                document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
+                document.getElementById("playerStats").innerText = "Level: " + lv + " || " + "XP: " + xp + " || " + "Money: " + money;
+
+
+
             });
 
             if (saveFile.name.startsWith("filech1_") == true)
@@ -99,8 +112,8 @@
                 document.getElementById("saveConfirmer").innerText = "Valid save file!";
 
                 //document.getElementById("testP").innerText = saveReader.result;
-                saveReader.readAsText(saveFile);
-                
+                saveReader.readAsText(saveFile);5
+
             }
             else if (saveFile.name.startsWith("filech2_") == true || saveFile.name.startsWith("filech3_") == true || saveFile.name.startsWith("filech4_") == true)
             { // Unsupported Chapter
@@ -110,9 +123,9 @@
             { //Not Save File
                 document.getElementById("saveConfirmer").innerText = "Not a deltarune savefile";
             }
-            
+
         }
-        
+
     </script>
 </body>
 </html>
