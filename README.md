@@ -62,3 +62,11 @@ Kale
 * Displayed money
 * Displayed level
 * Displayed xp
+
+Work log: Mar 10th
+
+Kale
+* Found a source containing indexing for a large chunk of chapter 1 files
+* created .gitignore file
+* Tested displayed more save file info (weapons, party members and armour)
+* Finally understand how the save file works (which index applies to which value)
