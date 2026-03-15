@@ -159,8 +159,6 @@ C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveRe
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\wp3hkxwdgv-{0}-h1s4sie4z3-h1s4sie4z3.gz
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\mqwnr6i9yi-{0}-63fj8s7r0e-63fj8s7r0e.gz
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\2d14dkruf0-{0}-0j3bgjxly4-0j3bgjxly4.gz
-C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\0mpzr5zyof-{0}-47otxtyo56-47otxtyo56.gz
-C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\nw5b6454ho-{0}-4v8eqarkd7-4v8eqarkd7.gz
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\3kks4v65of-{0}-l3n5xuwxn8-l3n5xuwxn8.gz
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\yid91zekh1-{0}-ilo7uva0vt-ilo7uva0vt.gz
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\rxngityzsk-{0}-qlccset4i1-qlccset4i1.gz
@@ -185,7 +183,6 @@ C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveRe
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\DELTARUNESaveReader.pdb
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\DELTARUNESaveReader.genruntimeconfig.cache
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\ref\DELTARUNESaveReader.dll
-C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\59h5k74fqm-{0}-qe3cbahunm-qe3cbahunm.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\bin\Debug\net9.0\appsettings.json
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\bin\Debug\net9.0\DELTARUNESaveReader.staticwebassets.runtime.json
@@ -372,3 +369,4 @@ C:\Users\Kalef\OneDrive\Desktop\epic school folder\College\2025-2026\Winter\Majo
 C:\Users\Kalef\OneDrive\Desktop\epic school folder\College\2025-2026\Winter\Major Project\Clone Mar3\Major-Project-Deltarune-Save-Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\DELTARUNESaveReader.pdb
 C:\Users\Kalef\OneDrive\Desktop\epic school folder\College\2025-2026\Winter\Major Project\Clone Mar3\Major-Project-Deltarune-Save-Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\DELTARUNESaveReader.genruntimeconfig.cache
 C:\Users\Kalef\OneDrive\Desktop\epic school folder\College\2025-2026\Winter\Major Project\Clone Mar3\Major-Project-Deltarune-Save-Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\ref\DELTARUNESaveReader.dll
+C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\59h5k74fqm-{0}-fv6bzlzvpq-fv6bzlzvpq.gz

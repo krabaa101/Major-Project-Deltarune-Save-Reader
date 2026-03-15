@@ -64,6 +64,7 @@
             <!--More Random Fun save facts here:-->
             <p id="fileName">Name: </p>
             <p id="playerStats">Player stats: </p>
+            <p id="currentRoom">Current Room: </p>
         </div>
     </div>
 
@@ -84,25 +85,116 @@
                 //document.getElementById("testP").innerText = saveReader.result;
 
                 // assigning array indexes to variables
-                    const saveArray = saveReader.result.split(/\r\n/);
-                    let time = parseInt(saveArray[10317]) / 30;
-                    time = Math.floor(time);
-                    const sec = time - 14400 - 780;
-                    let min = time - 14400 - 35;
-                    min = min/60;
-                    let hour = time - 780 - 35;
-                    hour = hour / 60 / 60; // used let instead of var as i believe it's more efficient, and u were re-assigning variables
+                const saveArray = saveReader.result.split("\n");
+                let time = parseInt(saveArray[10317]) / 30;
+                time = Math.floor(time);
+                const sec = time - 14400 - 780;
+                let min = time - 14400 - 35;
+                min = min/60;
+                let hour = time - 780 - 35;
+                hour = hour / 60 / 60; // used let instead of var as i believe it's more efficient, and u were re-assigning variables
 
 
-                    const money = parseInt(saveArray[10]);
-                    const xp = parseInt(saveArray[11]);
-                    const lv = parseInt(saveArray[12]);
+                const money = parseInt(saveArray[10]);
+                const xp = parseInt(saveArray[11]);
+                const lv = parseInt(saveArray[12]);
+
+                //Room Code (First If statement is just there for easy collapsing, don't mind it.)
+                const room = parseInt(saveArray[10316])
+                let roomname = "Test room"
+                if (room != 0)
+                    {
+                        if (room == 10316)
+                        {
+                            roomname = "??????";
+                        }
+                        if (room == 10321)
+                        {
+                            roomname = "Eye Puzzle";
+                        }
+                        if (room == 10326)
+                        {
+                            roomname = "Castle Town";
+                        }
+                        if (room == 10330)
+                        {
+                            roomname = "Great Door";
+                        }
+                        if (room == 10337)
+                        {
+                            roomname = "Maze of Death";
+                        }
+                        if (room == 10340)
+                        {
+                            roomname = "Seam's Shop";
+                        }
+                        if (room == 10349)
+                        {
+                            roomname = "Great Board";
+                        }
+                        if (room == 10352)
+                        {
+                            roomname = "Great Board 2";
+                        }
+                        if (room == 10354)
+                        {
+                            roomname = "Forest Entrance";
+                        }
+                        if (room == 10363)
+                        {
+                            roomname = "Bake Sale";
+                        }
+                        if (room == 10371)
+                        {
+                            roomname = "Forest Maze";
+                        }
+                        if (room == 10377)
+                        {
+                            roomname = "After Maze";
+                        }
+                        if (room == 10378)
+                        {
+                            roomname = "Thrashing Room";
+                        }
+                        if (room == 10388)
+                        {
+                            roomname = "Card Castle Prison";
+                        }
+                        if (room == 10392)
+                        {
+                            roomname = "Card Castle Basement";
+                        }
+                        if (room == 10395)
+                        {
+                            roomname = "Card Castle 1F";
+                        }
+                        if (room == 10404)
+                        {
+                            roomname = "Card Castle 5F";
+                        }
+                        if (room == 10407)
+                        {
+                            roomname = "Card Castle Throne Room";
+                        }
+                    }
+
+                // Progress / Bosses Beaten !!
+                let tutorial = parseInt(saveArray[522]);
+                let tutText = "";
+                if (tutorial = 1)
+                { // Tutorial Complete (Could not find check for beating Lancer 1)
+                    tutText = "Tutorial: Complete";
+                }
+                else if (tutorial = 0)
+                {
+                    tutText = "Tutorial: Incomplete";
+                }
 
                 // displaying information
                 document.getElementById("fileName").innerText = "Name: " + saveArray[0];
                 document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
                 document.getElementById("playerStats").innerText = "Level: " + lv + " || " + "XP: " + xp + " || " + "Money: " + money;
-
+                document.getElementById("currentRoom").innerText = "Current Room: " + roomname;
 
 
             });
@@ -112,7 +204,7 @@
                 document.getElementById("saveConfirmer").innerText = "Valid save file!";
 
                 //document.getElementById("testP").innerText = saveReader.result;
-                saveReader.readAsText(saveFile);5
+                saveReader.readAsText(saveFile);
 
             }
             else if (saveFile.name.startsWith("filech2_") == true || saveFile.name.startsWith("filech3_") == true || saveFile.name.startsWith("filech4_") == true)
