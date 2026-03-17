@@ -84,3 +84,11 @@ Keegan
 * Added Current Location
 * Started Milestone Checks
 
+
+
+Work Log: Mar 17th
+
+* Added More CSS
+* Added inventory list
+* Started implementing milestone checks
+
