@@ -205,7 +205,6 @@ C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\scopedcss\bundle\DELTARUNESaveReader.styles.css
-C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\1qzecpiekj-ucod7ztccw.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\a0lb09jx1o-61n19gt1b8.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\2w02m6llfl-t1cqhe9u97.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\td3asuhb6h-c2jlpeoesf.gz
@@ -251,8 +250,6 @@ C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\xhv23sgmnd-h1s4sie4z3.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\rsg6pmbpm2-4d85u1mtcx.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\7581f134jj-0j3bgjxly4.gz
-C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\h4db7m0cfo-03hjc8e09r.gz
-C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\1oxpspxffk-48y08845bh.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\d3h55voqfp-356vix0kms.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\e98nqacm7i-83jwlth58m.gz
 C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\r8ajbphm48-mrlpezrjn3.gz
@@ -370,3 +367,4 @@ C:\Users\Kalef\OneDrive\Desktop\epic school folder\College\2025-2026\Winter\Majo
 C:\Users\Kalef\OneDrive\Desktop\epic school folder\College\2025-2026\Winter\Major Project\Clone Mar3\Major-Project-Deltarune-Save-Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\DELTARUNESaveReader.genruntimeconfig.cache
 C:\Users\Kalef\OneDrive\Desktop\epic school folder\College\2025-2026\Winter\Major Project\Clone Mar3\Major-Project-Deltarune-Save-Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\ref\DELTARUNESaveReader.dll
 C:\Users\Keega\Deltarune Save Reader\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\59h5k74fqm-{0}-fv6bzlzvpq-fv6bzlzvpq.gz
+C:\Users\Keega\School - Driveless\Year 2 Semester 2\440 - Major Project\Project\webpage\DELTARUNESaveReader\DELTARUNESaveReader\obj\Debug\net9.0\compressed\1qzecpiekj-7tqz9361qm.gz

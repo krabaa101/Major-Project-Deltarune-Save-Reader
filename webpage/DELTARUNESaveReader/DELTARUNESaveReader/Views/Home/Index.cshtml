@@ -15,58 +15,100 @@
 </head>
 <body>
     <div id="content">
-        <h1 id="h1-title">Save Completion Tracker</h1>
-        <h2 id="h2-subtitle">For Deltarune</h2>
+        <div id="inputBox">
+            <h1 id="h1-title">Save Completion Tracker</h1>
+            <h2 id="h2-subtitle">For Deltarune</h2>
 
-        <p class="smalltext"><!-- write banner of hrefs here: steam guide, github --></p>
+            <p class="smalltext"><!-- write banner of hrefs here: steam guide, github --></p>
 
-        <div class="tooltips">
+            <div class="tooltips">
             <!-- pasteable path for "noob users." -->
-            <input id="save-location-input" value="%LOCALAPPDATA%\DELTARUNE" readonly="readonly">
+                <input id="save-location-input" value="%LOCALAPPDATA%\DELTARUNE" readonly="readonly">
 
-            <span class="tooltips-text" id="save-location-input-tooltips">
-                <br> <!-- Add JS on-hover for tooltips-text class -->
-                "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
-            </span>
-        </div>
+                <span class="tooltips-text" id="save-location-input-tooltips">
+                    <br> <!-- Add JS on-hover for tooltips-text class -->
+                    "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
+                </span>
+            </div>
 
-        <p class="smalltext">
-            Choose
-            <strong>filech1_#</strong>
-            then drag and drop, or select directly in the box below.
-        </p>
+            <p class="smalltext">
+                Choose
+                <strong>filech1_#</strong>
+                then drag and drop, or select directly in the box below.
+            </p>
 
-        <p class="smalltext">
-            The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
-        </p>
+            <p class="smalltext">
+                The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
+            </p>
 
-        <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
+            <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
 
-        <p></p> <!--Empty paragraph for spacing.-->
+            <p></p> <!--Empty paragraph for spacing.-->
 
-        <div id="save-file-input">
+            <div id="save-file-input">
 
-            <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
-            <input id="saveInput" type="file" accept="file/*" value="">
+                <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
+                <input id="saveInput" type="file" accept="file/*" value="">
 
-            <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
-            <p id="saveConfirmer">No file input yet.</p>
+                <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
+                <p id="saveConfirmer">No file input yet.</p>
 
-            <!-- Button to confirm file (I attempted to make a localStorage value that holds the filepath, but apparently input type: file values use a fakepath to keep user filepaths private.) -->
-            <button id="confirmButton">Confirm!</button>
-        </div>
+                <!-- Button to confirm file (I attempted to make a localStorage value that holds the filepath, but apparently input type: file values use a fakepath to keep user filepaths private.) -->
+                <button id="confirmButton">Confirm!</button>
+            </div>
 
-        <div id="ResultDiv">
+        
             <h2 id="h2-game-status">Game completion status:</h2> <!--  Add % variable through JS here (float) -->
-
-
-            <p id="timeText">Time Played: </p> <!--JS displays data here-->
-            <!--More Random Fun save facts here:-->
-            <p id="fileName">Name: </p>
-            <p id="playerStats">Player stats: </p>
-            <p id="currentRoom">Current Room: </p>
         </div>
-    </div>
+
+            <!--JS displays data here-->
+            <!--More Random Fun save facts here:-->
+        <div class="saveDisplay">
+                <div class="statBox"> <!--Save File Stats-->
+                    <h4> Stats & Save Information</h4>
+                    <p id="timeText">Time Played: ?</p>
+                    <p id="fileName">Name: ?</p>
+                    <p id="playerStats">Player stats: ?</p>
+                    <p id="currentRoom">Current Room: ?</p>
+                </div>
+
+                <div class="inventory"> <!--Save Inventory-->
+                    <div class="inventoryHead"> <h4>Inventory</h4> </div>
+
+                    <div class="krisHead"> <h5>Kris</h5> </div>
+
+                    <div class="krisSlot1"> <p>Kris' Weapon</p> </div>
+                    <div class="krisSlot2"> <p>Kris' Armor 1</p> </div>
+                    <div class="krisSlot3"> <p>Kris' Armor 2</p> </div>
+
+                    <div class="susieHead"> <h5>Susie</h5> </div>
+
+                    <div class="susieSlot1"> <p>Susie's Weapon</p> </div>
+                    <div class="susieSlot2"> <p>Susie's Armour 1</p> </div>
+                    <div class="susieSlot3"> <p>Susie's Armour 2</p> </div>
+
+                    <div class="ralseiHead"> <h5>Ralsei</h5> </div>
+
+                    <div class="ralseiSlot1"> <p>Ralsei's Weapon</p> </div>
+                    <div class="ralseiSlot2"> <p>Ralsei's Armour 1</p> </div>
+                    <div class="ralseiSlot3"> <p>Ralsei's Armour 2</p> </div>
+
+                    <div class="itemHead"> <h5>Items</h5> </div>
+
+                    <div class="weaponHead"> </div>
+
+                    <div class="armorHead"> </div>
+
+                    <div class="keyHead"> </div>
+                </div>
+
+                <div class="milestones">
+                    <h4>Major Milestones</h4>
+                    <p id="tutDisplay"></p>
+                </div>
+            </div>
+        </div>
+    
 
     <script>
         const docIdGet = document.getElementById;
@@ -180,7 +222,7 @@
 
                 // Progress / Bosses Beaten !!
                 let tutorial = parseInt(saveArray[522]);
-                let tutText = "";
+                let tutText = "test";
                 if (tutorial = 1)
                 { // Tutorial Complete (Could not find check for beating Lancer 1)
                     tutText = "Tutorial: Complete";
@@ -190,13 +232,16 @@
                     tutText = "Tutorial: Incomplete";
                 }
 
-                // displaying information
+                // Save Stats
                 document.getElementById("fileName").innerText = "Name: " + saveArray[0];
                 document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
                 document.getElementById("playerStats").innerText = "Level: " + lv + " || " + "XP: " + xp + " || " + "Money: " + money;
                 document.getElementById("currentRoom").innerText = "Current Room: " + roomname;
 
+                //Inventory
 
+                // Milestones
+                document.getElementById("tutDisplay").innerText = tutText;
             });
 
             if (saveFile.name.startsWith("filech1_") == true)
