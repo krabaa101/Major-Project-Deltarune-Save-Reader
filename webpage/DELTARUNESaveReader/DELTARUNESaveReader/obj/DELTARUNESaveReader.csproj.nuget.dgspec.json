@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj": {}
+    "C:\\Users\\Kalef\\OneDrive\\Desktop\\epic school folder\\College\\2025-2026\\Winter\\Major Project\\Clone Mar3\\Major-Project-Deltarune-Save-Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj": {
+    "C:\\Users\\Kalef\\OneDrive\\Desktop\\epic school folder\\College\\2025-2026\\Winter\\Major Project\\Clone Mar3\\Major-Project-Deltarune-Save-Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj",
+        "projectUniqueName": "C:\\Users\\Kalef\\OneDrive\\Desktop\\epic school folder\\College\\2025-2026\\Winter\\Major Project\\Clone Mar3\\Major-Project-Deltarune-Save-Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj",
         "projectName": "DELTARUNESaveReader",
-        "projectPath": "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj",
-        "packagesPath": "C:\\Users\\Keega\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Keega\\School - Driveless\\Year 2 Semester 2\\440 - Major Project\\Project\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\obj\\",
+        "projectPath": "C:\\Users\\Kalef\\OneDrive\\Desktop\\epic school folder\\College\\2025-2026\\Winter\\Major Project\\Clone Mar3\\Major-Project-Deltarune-Save-Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\DELTARUNESaveReader.csproj",
+        "packagesPath": "C:\\Users\\Kalef\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kalef\\OneDrive\\Desktop\\epic school folder\\College\\2025-2026\\Winter\\Major Project\\Clone Mar3\\Major-Project-Deltarune-Save-Reader\\webpage\\DELTARUNESaveReader\\DELTARUNESaveReader\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Keega\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kalef\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

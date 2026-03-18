@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DELTARUNESaveReader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f0f4b6814ff59a5a2ebb6331582a822b29399cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46fce97f28dc0f092c54b3576fe853074edf3500")]
 [assembly: System.Reflection.AssemblyProductAttribute("DELTARUNESaveReader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DELTARUNESaveReader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
