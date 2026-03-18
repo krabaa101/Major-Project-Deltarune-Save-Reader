@@ -88,7 +88,15 @@ Keegan
 
 Work Log: Mar 17th
 
+
 * Added More CSS
 * Added inventory list
 * Started implementing milestone checks
 
+Work Log: Mar 17th-Mar 19th
+
+Kale
+
+* Finished algorithm for displaying/iterating through save values
+* Added external js file to sort data names (dataNames.js) - Many arrays containing objects (value, text) pair
+* Iterated my new changes into Keegans front-end changes. eg. displaying info on the gridboxes
