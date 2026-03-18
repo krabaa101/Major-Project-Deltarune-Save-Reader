@@ -66,10 +66,22 @@
         <div class="saveDisplay">
                 <div class="statBox"> <!--Save File Stats-->
                     <h4> Stats & Save Information</h4>
+                   
                     <p id="timeText">Time Played: ?</p>
+
+
                     <p id="fileName">Name: ?</p>
-                    <p id="playerStats">Player stats: ?</p>
+                    
+
+                    <div id="playerStats">
+                        <p id="playerLevel">?</p>
+                        <p id="playerMoney">?</p>
+                        <p id="playerXp">?</p>
+                    </div>
+
+
                     <p id="currentRoom">Current Room: ?</p>
+
                 </div>
 
                 <div class="inventory"> <!--Save Inventory-->
@@ -77,9 +89,9 @@
 
                     <div class="krisHead"> <h5>Kris</h5> </div>
 
-                    <div class="krisSlot1"> <p>Kris' Weapon</p> </div>
-                    <div class="krisSlot2"> <p>Kris' Armor 1</p> </div>
-                    <div class="krisSlot3"> <p>Kris' Armor 2</p> </div>
+                    <div class="krisSlot1" id="krisSlot1"> <p>Kris' Weapon</p> </div>
+                    <div class="krisSlot2" id="krisSlot2"> <p>Kris' Armor 1</p> </div>
+                    <div class="krisSlot3" id="krisSlot3"> <p>Kris' Armor 2</p> </div>
 
                     <div class="susieHead"> <h5>Susie</h5> </div>
 
@@ -110,7 +122,11 @@
         </div>
     
 
-    <script>
+    <script type="module"> 
+        
+        //import dataNames.js PATH = '/wwwroot/js/dataNames.js
+        import * as dataNames from '../js/dataNames.js'   
+
         const docIdGet = document.getElementById;
         const input = document.getElementById('saveInput');
         const inButton = document.getElementById("confirmButton");
@@ -220,7 +236,12 @@
                         }
                     }
 
-                // Progress / Bosses Beaten !!
+                
+                    
+                    
+                    
+                    
+                    // Progress / Bosses Beaten !!
                 let tutorial = parseInt(saveArray[522]);
                 let tutText = "test";
                 if (tutorial = 1)
@@ -232,18 +253,75 @@
                     tutText = "Tutorial: Incomplete";
                 }
 
+
+
+                // Kris Stats
+
+                    // Displaying Kris Weapon
+                           let krisWeapon = "?";
+                           for (let weapon of dataNames.weaponsCh1)
+                           {
+                               if (weapon.value === parseInt(saveArray[76]))
+                               {
+                                   krisWeapon = weapon.text;
+                               }
+                           }
+
+                           console.log(krisWeapon);
+                           
+                   // Displaying Kris Armour 1
+                           let krisArmor1 = "?";
+                           for (let armor of dataNames.armorCh1)
+                           {
+                               if (armor.value === parseInt(saveArray[77]))
+                               {
+                                   krisArmor1 = armor.text;
+                               }
+                           }
+
+                           console.log(krisArmor1);
+
+                    // Displaying Kris Armour 2
+
+                           let krisArmor2 = "?";
+                           for (let armor of dataNames.armorCh1)
+                           {
+                               if (armor.value === parseInt(saveArray[78]))
+                               {
+                                   krisArmor2 = armor.text;
+                               }
+                           }
+
+                           console.log(krisArmor2);
+
                 // Save Stats
-                document.getElementById("fileName").innerText = "Name: " + saveArray[0];
-                document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
-                document.getElementById("playerStats").innerText = "Level: " + lv + " || " + "XP: " + xp + " || " + "Money: " + money;
-                document.getElementById("currentRoom").innerText = "Current Room: " + roomname;
+                    
+                    // Stats & General Info
+                    document.getElementById("fileName").innerText = "Name: " + saveArray[0];
+                    document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
+                    document.getElementById("playerLevel").innerText = "Level: " + lv;
+                    document.getElementById("playerMoney").innerText = "Money: " + money;
+                    document.getElementById("playerXp").innerText = "XP: " + xp;
+                    document.getElementById("currentRoom").innerText = "Current Room: " + roomname;
 
-                //Inventory
+                    // Kris
+                    document.getElementById("krisSlot1").innerText = "Kris' Weapon - " + krisWeapon;
+                    document.getElementById("krisSlot2").innerText = "Kris' Armor 1 - " + krisArmor1;
+                    document.getElementById("krisSlot3").innerText = "Kris' Armor 2 - " + krisArmor2;
 
-                // Milestones
-                document.getElementById("tutDisplay").innerText = tutText;
+                    //Inventory
+
+                    // Milestones
+                    document.getElementById("tutDisplay").innerText = tutText;
             });
 
+           
+            
+            
+            
+            
+            
+            
             if (saveFile.name.startsWith("filech1_") == true)
             {
                 document.getElementById("saveConfirmer").innerText = "Valid save file!";
