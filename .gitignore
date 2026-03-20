@@ -34,3 +34,5 @@ cli/
 x64/build/
 [Bb]in/
 [Oo]bj/
+obj/
+bin/
