@@ -1,23 +1,15 @@
 # Major-Project-Deltarune-Save-Reader
 
 Work Log: Tuesday Feb 3
-Keegan Created Github file
-
-Work Log: Tuesday Feb 3
-
 Keegan
-
-Created Github space
-
-Added Kale to contributers
-
-
+* Created Github file
+* Created Github space
+* Added Kale to contributers
 
 Kale
-Created first html site skeleton
-
-
-
+* Created first html site skeleton with comprehensive comments
+* Created kmekbeb branch and pushed
+  
 Work Log: Feb 10
 
 Keegan
@@ -28,12 +20,11 @@ Keegan
 
 Kale
 
-* Created ASP.NET App (10 minutes)
-* Imported old code into MVC folders for organization (20 minutes)
-* Tinkered with databases and decided a no-database solutioun was the best for our case (1 hour)
-* Created README.md to guide Keegan through my ASP workspace (5 minutes)
-* Researched YouTube videos and learnt how to convert C# objects to JSON (30 minutes)
-
+* Created ASP.NET App
+* Imported old code into MVC folders for organization
+* Tinkered with databases and decided a no-database solutioun was the best for our case
+* Created README.md to guide Keegan through my ASP workspace
+* Researched YouTube videos and learnt how to convert C# objects to JSON
 
 
 Work Log: Feb 17
@@ -85,16 +76,14 @@ Keegan
 * Started Milestone Checks
 
 
+Work Log: Mar 17th-Mar 19th
 
-Work Log: Mar 17th
-
+Keegan
 
 * Added More CSS
 * Added inventory list
 * Started implementing milestone checks
-
-Work Log: Mar 17th-Mar 19th
-
+  
 Kale
 
 * Finished algorithm for displaying/iterating through save values
