@@ -95,9 +95,9 @@
 
                     <div class="susieHead"> <h5>Susie</h5> </div>
 
-                    <div class="susieSlot1"> <p>Susie's Weapon</p> </div>
-                    <div class="susieSlot2"> <p>Susie's Armour 1</p> </div>
-                    <div class="susieSlot3"> <p>Susie's Armour 2</p> </div>
+                    <div class="susieSlot1" id="susieSlot1"> <p>Susie's Weapon</p> </div>
+                    <div class="susieSlot2" id="susieSlot2"> <p>Susie's Armour 1</p> </div>
+                    <div class="susieSlot3" id="susieSlot3"> <p>Susie's Armour 2</p> </div>
 
                     <div class="ralseiHead"> <h5>Ralsei</h5> </div>
 
@@ -294,6 +294,54 @@
 
                            console.log(krisArmor2);
 
+
+
+                // Susie Stats
+                 
+                    // Displaying Susie Weapon
+                               let susieWeapon = "?";
+                               for (let weapon of dataNames.weaponsCh1)
+                               {
+                                   if (weapon.value === parseInt(saveArray[130]))
+                                   {
+                                       susieWeapon = weapon.text;
+                                   }
+                               }
+
+                               console.log(susieWeapon);
+                           
+                       // Displaying susie Armour 1
+                               let susieArmor1 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[131]))
+                                   {
+                                       susieArmor1 = armor.text;
+                                   }
+                               }
+
+                               console.log(susieArmor1);
+
+                        // Displaying susie Armour 2
+
+                               let susieArmor2 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[132]))
+                                   {
+                                       susieArmor2 = armor.text;
+                                   }
+                               }
+
+                               console.log(susieArmor2);
+
+
+
+
+
+
+
+
                 // Save Stats
                     
                     // Stats & General Info
@@ -308,6 +356,11 @@
                     document.getElementById("krisSlot1").innerText = "Kris' Weapon - " + krisWeapon;
                     document.getElementById("krisSlot2").innerText = "Kris' Armor 1 - " + krisArmor1;
                     document.getElementById("krisSlot3").innerText = "Kris' Armor 2 - " + krisArmor2;
+
+                    // susie
+                    document.getElementById("susieSlot1").innerText = "Susie' Weapon - " + susieWeapon;
+                    document.getElementById("susieSlot2").innerText = "Susie' Armor 1 - " + susieArmor1;
+                    document.getElementById("susieSlot3").innerText = "Susie' Armor 2 - " + susieArmor2;
 
                     //Inventory
 
