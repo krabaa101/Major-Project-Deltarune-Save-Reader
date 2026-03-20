@@ -338,6 +338,48 @@
 
 
 
+                                               // Susie Stats
+                 
+                    // Displaying Ralsei Weapon
+                               let ralseiWeapon = "?";
+                               for (let weapon of dataNames.weaponsCh1)
+                               {
+                                   if (weapon.value === parseInt(saveArray[184]))
+                                   {
+                                       ralseiWeapon = weapon.text;
+                                   }
+                               }
+
+                               console.log(ralseiWeapon);
+                           
+                       // Displaying Ralsei Armour 1
+                               let ralseiArmor1 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[185]))
+                                   {
+                                       ralseiArmor1 = armor.text;
+                                   }
+                               }
+
+                               console.log(ralseiArmor1);
+
+                        // Displaying Ralsei Armour 2
+
+                               let ralseiArmor2 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[186]))
+                                   {
+                                       ralseiArmor2 = armor.text;
+                                   }
+                               }
+
+                               console.log(ralseiArmor2);
+
+
+
+
 
 
 
@@ -361,6 +403,11 @@
                     document.getElementById("susieSlot1").innerText = "Susie' Weapon - " + susieWeapon;
                     document.getElementById("susieSlot2").innerText = "Susie' Armor 1 - " + susieArmor1;
                     document.getElementById("susieSlot3").innerText = "Susie' Armor 2 - " + susieArmor2;
+
+                    // ralsei
+                    document.getElementById("ralseiSlot1").innerText = "Ralsei' Weapon - " + ralseiWeapon;
+                    document.getElementById("ralseiSlot2").innerText = "Ralsei' Armor 1 - " + ralseiArmor1;
+                    document.getElementById("ralseiSlot3").innerText = "Ralsei' Armor 2 - " + ralseiArmor2;
 
                     //Inventory
 
