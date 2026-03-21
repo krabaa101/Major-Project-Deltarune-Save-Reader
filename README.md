@@ -89,3 +89,10 @@ Kale
 * Finished algorithm for displaying/iterating through save values
 * Added external js file to sort data names (dataNames.js) - Many arrays containing objects (value, text) pair
 * Iterated my new changes into Keegans front-end changes. eg. displaying info on the gridboxes
+
+Work Log: Mar 21
+
+Kale
+
+* Fixed repeating if statements to display current room
+* Documented all steps with frequent commits and wrote comments to understand
