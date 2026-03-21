@@ -237,7 +237,21 @@
                 //     }
 
 
+                // Current Room
+                
+                // initialize room name to "?" as a default, used if no room name is found
+                let currentRoom = "?"
+                    // loop through each room in roomsCh1 object
+                    for (let room of dataNames.roomsCh1)
+                    {   // trying room value minus 10001, since line 10317 says '10407' and the lowest num room in dataNames.js is 416
+                        if (room.value === parseInt(saveArray[10316]) - 10001)
+                        {
+                            currentRoom = room.value;
+                        }
+                        console.log(currentRoom)
 
+                    }          
+            
                 
                     
                     
@@ -394,7 +408,7 @@
                     document.getElementById("playerLevel").innerText = "Level: " + lv;
                     document.getElementById("playerMoney").innerText = "Money: " + money;
                     document.getElementById("playerXp").innerText = "XP: " + xp;
-                    document.getElementById("currentRoom").innerText = "Current Room: " + roomname;
+                    document.getElementById("currentRoom").innerText = "Current Room: " + currentRoom;
 
                     // Kris
                     document.getElementById("krisSlot1").innerText = "Kris' Weapon - " + krisWeapon;
