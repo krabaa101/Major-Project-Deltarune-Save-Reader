@@ -105,7 +105,7 @@
                     <div class="ralseiSlot2" id="ralseiSlot2"> <p>Ralsei's Armour 1</p> </div>
                     <div class="ralseiSlot3" id="ralseiSlot3"> <p>Ralsei's Armour 2</p> </div>
 
-                    <div class="itemHead"> <h5>Items</h5> </div>
+                    <div class="itemHead" id="itemHead"> <h5>Items</h5> </div>
 
                     <div class="weaponHead"> </div>
 
@@ -172,6 +172,8 @@
                         console.log(currentRoom)
 
                     }          
+
+                  
             
                 
                     
@@ -182,13 +184,27 @@
                 let tutorial = parseInt(saveArray[522]);
                 let tutText = "test";
                 if (tutorial = 1)
-                { // Tutorial Complete (Could not find check for beating Lancer 1)
+                { 
+                    // Tutorial Complete (Could not find check for beating Lancer 1)
                     tutText = "Tutorial: Complete";
                 }
                 else if (tutorial = 0)
                 {
                     tutText = "Tutorial: Incomplete";
                 }
+
+
+                // ---------------- Displaying Invetory Items ----------------
+                
+                // Find Key Item #1
+                let keyItem1 = "?"
+                for (let keyItem of dataNames.key_itemsCh1){
+                    if (keyItem.value === parseInt(saveArray[236]))
+                    {
+                        keyItem1 = keyItem.text;
+                    }
+                }
+                   
 
 
 
@@ -275,9 +291,10 @@
 
 
 
-                                               // Susie Stats
+                    // Susie Stats
                  
                     // Displaying Ralsei Weapon
+                                console.log("Ralsei Stats -----------------------");
                                let ralseiWeapon = "?";
                                for (let weapon of dataNames.weaponsCh1)
                                {
@@ -347,6 +364,7 @@
                     document.getElementById("ralseiSlot3").innerText = "Ralsei' Armor 2 - " + ralseiArmor2;
 
                     //Inventory
+                    document.getElementById("itemHead").innerText = "Key Item #1 - " + keyItem1; // change itemHead to the proper slot once keegan makes item slot containers
 
                     // Milestones
                     document.getElementById("tutDisplay").innerText = tutText;
