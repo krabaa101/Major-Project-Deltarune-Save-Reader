@@ -83,34 +83,46 @@
                     <p id="currentRoom">Current Room: ?</p>
 
                 </div>
-
+                
+                    @* =================== Inventory Here =================== *@
                 <div class="inventory"> <!--Save Inventory-->
                     <div class="inventoryHead"> <h4>Inventory</h4> </div>
-
+                    
+                    @* =================== Kris Stats Here =================== *@
                     <div class="krisHead"> <h5>Kris</h5> </div>
 
                     <div class="krisSlot1" id="krisSlot1"> <p>Kris' Weapon</p> </div>
                     <div class="krisSlot2" id="krisSlot2"> <p>Kris' Armor 1</p> </div>
                     <div class="krisSlot3" id="krisSlot3"> <p>Kris' Armor 2</p> </div>
 
+                    
+                    @* =================== Susie Stats Here =================== *@
                     <div class="susieHead"> <h5>Susie</h5> </div>
 
                     <div class="susieSlot1" id="susieSlot1"> <p>Susie's Weapon</p> </div>
                     <div class="susieSlot2" id="susieSlot2"> <p>Susie's Armour 1</p> </div>
                     <div class="susieSlot3" id="susieSlot3"> <p>Susie's Armour 2</p> </div>
 
+                    @* =================== Ralsei Stats Here =================== *@
                     <div class="ralseiHead"> <h5>Ralsei</h5> </div>
 
                     <div class="ralseiSlot1" id="ralseiSlot1"> <p>Ralsei's Weapon</p> </div>
                     <div class="ralseiSlot2" id="ralseiSlot2"> <p>Ralsei's Armour 1</p> </div>
                     <div class="ralseiSlot3" id="ralseiSlot3"> <p>Ralsei's Armour 2</p> </div>
 
+                    
+                    @* =================== Items Here =================== *@
                     <div class="itemHead" id="itemHead"> <h5>Items</h5> </div>
 
+
+                        
+                    @* =================== Weapons Here =================== *@
                     <div class="weaponHead"> </div>
-
+                    
+                    @* =================== Armour Here =================== *@
                     <div class="armorHead"> </div>
-
+                    
+                    @* =================== Key Items Here =================== *@
                     <div class="keyHead"> </div>
                 </div>
 
@@ -138,9 +150,10 @@
             const saveFile = document.getElementById("saveInput").files[0];
             const saveReader = new FileReader();
 
-            //!! CODE FOR PARSING SAVE IS HERE !!
-            saveReader.addEventListener("load", () => {
-                //document.getElementById("testP").innerText = saveReader.result;
+            // =================== Start of Save Parsing ===================
+            // =============================================================
+
+                saveReader.addEventListener("load", () => {
 
                 // assigning array indexes to variables
                 const saveArray = saveReader.result.split("\n");
@@ -150,7 +163,7 @@
                 let min = time - 14400 - 35;
                 min = min/60;
                 let hour = time - 780 - 35;
-                hour = hour / 60 / 60; // used let instead of var as i believe it's more efficient, and u were re-assigning variables
+                hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
 
                 const money = parseInt(saveArray[10]);
@@ -158,7 +171,7 @@
                 const lv = parseInt(saveArray[12]);
 
 
-                // Current Room
+                // =================== Current Room ===================
                 
                 // initialize room name to "?" as a default, used if no room name is found
                 let currentRoom = "?"
@@ -171,16 +184,19 @@
                         }
                         console.log(currentRoom)
 
-                    }          
+                    }     
+                    
+                // =================== End of Current Room ===================
 
-                  
-            
-                
-                    
-                    
-                    
-                    
-                    // Progress / Bosses Beaten !!
+
+
+
+
+
+
+
+                // =================== Progress & Bosses Beaten ===================
+
                 let tutorial = parseInt(saveArray[522]);
                 let tutText = "test";
                 if (tutorial = 1)
@@ -193,23 +209,142 @@
                     tutText = "Tutorial: Incomplete";
                 }
 
-
-                // ---------------- Displaying Invetory Items ----------------
-                
-                // Find Key Item #1
-                let keyItem1 = "?"
-                for (let keyItem of dataNames.key_itemsCh1){
-                    if (keyItem.value === parseInt(saveArray[236]))
-                    {
-                        keyItem1 = keyItem.text;
+                // =================== End of Progress & Bosses Beaten ===================
+                    console.log("=================")
+                // =================== Displaying Invetory Items ===================
+                    console.log("Inventory Items")
+                    
+                    // Find Key Item #1
+                    console.log("Key Items 1-12")
+                    let keyItem1 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[236]))
+                        {
+                            keyItem1 = keyItem.text;
+                        }
                     }
-                }
-                   
+                    console.log("1: " + keyItem1)
+                    
+                    // Find Key Item #2
 
 
+                    let keyItem2 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[240]))
+                        {
+                            keyItem2 = keyItem.text;
+                        }
+                    }
+                    console.log("2: " + keyItem2);
 
-                // Kris Stats
+                    // Find Key Item #3
+                    let keyItem3 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[244]))
+                        {
+                            keyItem3 = keyItem.text;
+                        }
+                    }
+                    console.log("3: " + keyItem3);
 
+                    // Find Key Item #4
+                    let keyItem4 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[248]))
+                        {
+                            keyItem4 = keyItem.text;
+                        }
+                    }
+                    console.log("4: " + keyItem4);
+
+
+                    // Find Key Item #5
+                    let keyItem5 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[252]))
+                        {
+                            keyItem5 = keyItem.text;
+                        }
+                    }
+                    console.log("5: " + keyItem5);
+
+
+                    // Find Key Item #6
+                    let keyItem6 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[257]))
+                        {
+                            keyItem6 = keyItem.text;
+                        }
+                    }
+                    console.log("6: " + keyItem6);
+
+                    
+                    // Find Key Item #7
+                    let keyItem7 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[260]))
+                        {
+                            keyItem7 = keyItem.text;
+                        }
+                    }
+                    console.log("7: " + keyItem7);
+
+                                // Find Key Item #8
+                    let keyItem8 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[264]))
+                        {
+                            keyItem8 = keyItem.text;
+                        }
+                    }
+                    console.log("8: " + keyItem8);
+
+                                // Find Key Item #9
+                    let keyItem9 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[268]))
+                        {
+                            keyItem9 = keyItem.text;
+                        }
+                    }
+                    console.log("9: " + keyItem9);
+
+                                // Find Key Item #10
+                    let keyItem10 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[272]))
+                        {
+                            keyItem10 = keyItem.text;
+                        }
+                    }
+                    console.log("10: " + keyItem10);
+
+                                // Find Key Item #11
+                    let keyItem11 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[276]))
+                        {
+                            keyItem11 = keyItem.text;
+                        }
+                    }
+                    console.log("11: " + keyItem11);
+
+                                // Find Key Item #12
+                    let keyItem12 = "?"
+                    for (let keyItem of dataNames.key_itemsCh1){
+                        if (keyItem.value === parseInt(saveArray[280]))
+                        {
+                            keyItem12 = keyItem.text;
+                        }
+                    }
+                    console.log("12: " + keyItem12);
+
+
+                // =================== End Displaying Invetory Items ===================
+                    console.log("=================")
+                // =================== Displaying Kris Stats ===================
+                    console.log("Kris Stats");
                     // Displaying Kris Weapon
                            let krisWeapon = "?";
                            for (let weapon of dataNames.weaponsCh1)
@@ -221,6 +356,7 @@
                            }
 
                            console.log(krisWeapon);
+
                            
                    // Displaying Kris Armour 1
                            let krisArmor1 = "?";
@@ -247,10 +383,10 @@
 
                            console.log(krisArmor2);
 
-
-
-                // Susie Stats
-                 
+                // =================== End of Displaying Kris Stats ===================
+                    console.log("=================")
+                // =================== Displaying Susie Stats ===================
+                    console.log("Susie Stats");
                     // Displaying Susie Weapon
                                let susieWeapon = "?";
                                for (let weapon of dataNames.weaponsCh1)
@@ -288,13 +424,12 @@
 
                                console.log(susieArmor2);
 
-
-
-
-                    // Susie Stats
+                // =================== End of Displaying Susie Stats ===================
+                console.log("=================")
+                // =================== Displaying Ralsei Stats ===================
                  
                     // Displaying Ralsei Weapon
-                                console.log("Ralsei Stats -----------------------");
+                                console.log("Ralsei Stats");
                                let ralseiWeapon = "?";
                                for (let weapon of dataNames.weaponsCh1)
                                {
@@ -331,14 +466,15 @@
 
                                console.log(ralseiArmor2);
 
+                               
+                // ===================End of Displaying Ralsei Stats ===================
+                console.log("=================")
+                // =================== End of Save Parsing ===================
+                // =============================================================
 
 
 
-
-
-
-
-                // Save Stats
+                // ===================  Writing Parsed Stats to the Document ===================
                     
                     // Stats & General Info
                     document.getElementById("fileName").innerText = "Name: " + saveArray[0];
@@ -348,22 +484,22 @@
                     document.getElementById("playerXp").innerText = "XP: " + xp;
                     document.getElementById("currentRoom").innerText = "Current Room: " + currentRoom;
 
-                    // Kris
+                    // Kris' Gear
                     document.getElementById("krisSlot1").innerText = "Kris' Weapon - " + krisWeapon;
                     document.getElementById("krisSlot2").innerText = "Kris' Armor 1 - " + krisArmor1;
                     document.getElementById("krisSlot3").innerText = "Kris' Armor 2 - " + krisArmor2;
 
-                    // susie
+                    // Susie' Gear
                     document.getElementById("susieSlot1").innerText = "Susie' Weapon - " + susieWeapon;
                     document.getElementById("susieSlot2").innerText = "Susie' Armor 1 - " + susieArmor1;
                     document.getElementById("susieSlot3").innerText = "Susie' Armor 2 - " + susieArmor2;
 
-                    // ralsei
+                    // Ralsei' Gear
                     document.getElementById("ralseiSlot1").innerText = "Ralsei' Weapon - " + ralseiWeapon;
                     document.getElementById("ralseiSlot2").innerText = "Ralsei' Armor 1 - " + ralseiArmor1;
                     document.getElementById("ralseiSlot3").innerText = "Ralsei' Armor 2 - " + ralseiArmor2;
 
-                    //Inventory
+                    // Inventory
                     document.getElementById("itemHead").innerText = "Key Item #1 - " + keyItem1; // change itemHead to the proper slot once keegan makes item slot containers
 
                     // Milestones
@@ -374,7 +510,7 @@
             
             
             
-            
+            // =================== Final Save File Validation ===================
             
             
             if (saveFile.name.startsWith("filech1_") == true)
@@ -386,14 +522,13 @@
 
             }
             else if (saveFile.name.startsWith("filech2_") == true || saveFile.name.startsWith("filech3_") == true || saveFile.name.startsWith("filech4_") == true)
-            { // Unsupported Chapter
+            { // Unsupported Chapter - Only Chapter 1 Supported Currently
                 document.getElementById("saveConfirmer").innerText = "No late chapter support.";
             }
             else
-            { //Not Save File
+            { // Not Save File Type
                 document.getElementById("saveConfirmer").innerText = "Not a deltarune savefile";
             }
-
         }
 
     </script>
