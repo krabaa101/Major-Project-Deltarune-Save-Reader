@@ -107,11 +107,57 @@
 
                     <div class="itemHead"> <h5>Items</h5> </div>
 
-                    <div class="weaponHead"> </div>
+                    <div class="itemSlot1"> <p>Item</p> </div>
+                    <div class="itemSlot2"> <p>Item</p> </div>
+                    <div class="itemSlot3"> <p>Item</p> </div>
+                    <div class="itemSlot4"> <p>Item</p> </div>
+                    <div class="itemSlot5"> <p>Item</p> </div>
+                    <div class="itemSlot6"> <p>Item</p> </div>
+                    <div class="itemSlot7"> <p>Item</p> </div>
+                    <div class="itemSlot8"> <p>Item</p> </div>
+                    <div class="itemSlot9"> <p>Item</p> </div>
+                    <div class="itemSlot10"> <p>Item</p> </div>
+                    <div class="itemSlot11"> <p>Item</p> </div>
+                    <div class="itemSlot12"> <p>Item</p> </div>
 
-                    <div class="armorHead"> </div>
 
-                    <div class="keyHead"> </div>
+                    <div class="weaponHead" id="weaponHead"> <h5>Weapons</h5> </div>
+
+                    <div class="weaponSlot1"> <p>Weapon</p> </div>
+                    <div class="weaponSlot2"> <p>Weapon</p> </div>
+                    <div class="weaponSlot3"> <p>Weapon</p> </div>
+                    <div class="weaponSlot4"> <p>Weapon</p> </div>
+                    <div class="weaponSlot5"> <p>Weapon</p> </div>
+                    <div class="weaponSlot6"> <p>Weapon</p> </div>
+                    <div class="weaponSlot7"> <p>Weapon</p> </div>
+                    <div class="weaponSlot8"> <p>Weapon</p> </div>
+                    <div class="weaponSlot9"> <p>Weapon</p> </div>
+                    <div class="weaponSlot10"> <p>Weapon</p> </div>
+                    <div class="weaponSlot11"> <p>Weapon</p> </div>
+                    <div class="weaponSlot12"> <p>Weapon</p> </div>
+
+                    <div class="armorHead"> Armours </div>
+
+                    <div class="armorSlot1"> <p>Armour</p> </div>
+                    <div class="armorSlot2"> <p>Armour</p> </div>
+                    <div class="armorSlot3"> <p>Armour</p> </div>
+                    <div class="armorSlot4"> <p>Armour</p> </div>
+                    <div class="armorSlot5"> <p>Armour</p> </div>
+                    <div class="armorSlot6"> <p>Armour</p> </div>
+                    <div class="armorSlot7"> <p>Armour</p> </div>
+                    <div class="armorSlot8"> <p>Armour</p> </div>
+                    <div class="armorSlot9"> <p>Armour</p> </div>
+                    <div class="armorSlot10"> <p>Armour</p> </div>
+                    <div class="armorSlot11"> <p>Armour</p> </div>
+                    <div class="armorSlot12"> <p>Armour</p> </div>
+
+                    <div class="keyHead"> <h5>Key Items</h5> </div> <!--I am pretty sure there aren't more than 6 Key items you can hold at a time.-->
+                    <div class="keySlot1"> <p>Key</p> </div>
+                    <div class="keySlot2"> <p>Key</p> </div>
+                    <div class="keySlot3"> <p>Key</p> </div>
+                    <div class="keySlot4"> <p>Key</p> </div>
+                    <div class="keySlot5"> <p>Key</p> </div>
+                    <div class="keySlot6"> <p>Key</p> </div>
                 </div>
 
                 <div class="milestones">
@@ -178,18 +224,38 @@
                     
                     
                     
-                    // Progress / Bosses Beaten !!
+                    // Main Story Progress / Bosses Beaten !!
                 let tutorial = parseInt(saveArray[522]);
                 let tutText = "test";
                 if (tutorial = 1)
                 { // Tutorial Complete (Could not find check for beating Lancer 1)
                     tutText = "Tutorial: Complete";
+
+                    let boss1 = parseInt(saveArray[530]);
+                    if (boss1 != 0)
+                    {
+                        tutText += "  K.Round: Beaten";
+                        let boss2 = parseInt([550]);
+                        if (boss2 = 1)
+                        {
+                            tutText += "  Clover: Beaten"
+                        }
+                        else
+                        {
+                            tutText += "  Boss 2: Incomplete"
+                        }
+                    }
+                    else
+                    {
+                        tutText += "  Boss 1: Incomplete";
+                    }
                 }
                 else if (tutorial = 0)
                 {
                     tutText = "Tutorial: Incomplete";
                 }
 
+                
 
 
                 // Kris Stats
