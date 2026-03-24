@@ -125,18 +125,18 @@
                     @* =================== Key Items Here =================== *@
                     <div class="keyHead"> </div>
 
-                    <div class="itemSlot1"> <p>Item</p> </div>
-                    <div class="itemSlot2"> <p>Item</p> </div>
-                    <div class="itemSlot3"> <p>Item</p> </div>
-                    <div class="itemSlot4"> <p>Item</p> </div>
-                    <div class="itemSlot5"> <p>Item</p> </div>
-                    <div class="itemSlot6"> <p>Item</p> </div>
-                    <div class="itemSlot7"> <p>Item</p> </div>
-                    <div class="itemSlot8"> <p>Item</p> </div>
-                    <div class="itemSlot9"> <p>Item</p> </div>
-                    <div class="itemSlot10"> <p>Item</p> </div>
-                    <div class="itemSlot11"> <p>Item</p> </div>
-                    <div class="itemSlot12"> <p>Item</p> </div>
+                    <div class="itemSlot1"id="itemSlot1"> <p>Item</p> </div>
+                    <div class="itemSlot2"id="itemSlot2"> <p>Item</p> </div>
+                    <div class="itemSlot3"id="itemSlot3"> <p>Item</p> </div>
+                    <div class="itemSlot4"id="itemSlot4"> <p>Item</p> </div>
+                    <div class="itemSlot5"id="itemSlot5"> <p>Item</p> </div>
+                    <div class="itemSlot6"id="itemSlot6"> <p>Item</p> </div>
+                    <div class="itemSlot7"id="itemSlot7"> <p>Item</p> </div>
+                    <div class="itemSlot8"id="itemSlot8"> <p>Item</p> </div>
+                    <div class="itemSlot9"id="itemSlot9"> <p>Item</p> </div>
+                    <div class="itemSlot10"id="itemSlot10"> <p>Item</p> </div>
+                    <div class="itemSlot11"id="itemSlot11"> <p>Item</p> </div>
+                    <div class="itemSlot12"id="itemSlot12"> <p>Item</p> </div>
 
 
                     <div class="weaponHead" id="weaponHead"> <h5>Weapons</h5> </div>
@@ -662,6 +662,127 @@
 					}
 					console.log("12: " + armour12);
 
+                 // =================== End of Armour ===================
+                    console.log("===================")
+                // =================== Items ===================
+                    console.log("Items 1-12")
+                    let item1 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[238]))
+						{
+							item1 = item.text;
+						}
+					}
+					console.log("1: " + item1);
+
+                                        let item2 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[242]))
+						{
+							item2 = item.text;
+						}
+					}
+					console.log("2: " + item2);
+
+                                        
+                                        let item3 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[246]))
+						{
+							item3 = item.text;
+						}
+					}
+					console.log("3: " + item3);
+
+                    
+                                        let item4 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[250]))
+						{
+							item4 = item.text;
+						}
+					}
+					console.log("4: " + item4);
+
+                    
+                                        let item5 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[254]))
+						{
+							item5 = item.text;
+						}
+					}
+					console.log("5: " + item5);
+
+                    
+                                        let item6 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[258]))
+						{
+							item6 = item.text;
+						}
+					}
+					console.log("6: " + item6);
+
+                    
+                                        let item7 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[262]))
+						{
+							item7 = item.text;
+						}
+					}
+					console.log("7: " + item7);
+
+                    
+                                        let item8 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[266]))
+						{
+							item8 = item.text;
+						}
+					}
+					console.log("8: " + item8);
+
+                    
+                                        let item9 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[270]))
+						{
+							item9 = item.text;
+						}
+					}
+					console.log("9: " + item9);
+
+                    
+                                        let item10 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[274]))
+						{
+							item10 = item.text;
+						}
+					}
+					console.log("10: " + item10);
+
+                    
+                                        let item11 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[278]))
+						{
+							item11 = item.text;
+						}
+					}
+					console.log("11: " + item11);
+
+                    
+                                        let item12 = "?"
+					for (let item of dataNames.itemsCh1){
+						if (item.value === parseInt(saveArray[282]))
+						{
+							item12 = item.text;
+						}
+					}
+					console.log("12: " + item12);
                 // =================== End Displaying Invetory Items ===================
                     console.log("=================")
                 // =================== Displaying Kris Stats ===================
@@ -863,6 +984,21 @@
                         document.getElementById("armorSlot10").innerText = "Armour #10 - " + armour10;
                         document.getElementById("armorSlot11").innerText = "Armour #11 - " + armour11;
                         document.getElementById("armorSlot12").innerText = "Armour #12 - " + armour12;
+
+                        // Items (Inventory)
+                        document.getElementById("itemSlot1").innerText = "Item #1 - " + item1;
+                        document.getElementById("itemSlot2").innerText = "Item #2 - " + item2;
+                        document.getElementById("itemSlot3").innerText = "Item #3 - " + item3;
+                        document.getElementById("itemSlot4").innerText = "Item #4 - " + item4;
+                        document.getElementById("itemSlot5").innerText = "Item #5 - " + item5;
+                        document.getElementById("itemSlot6").innerText = "Item #6 - " + item6;
+                        document.getElementById("itemSlot7").innerText = "Item #7 - " + item7;
+                        document.getElementById("itemSlot8").innerText = "Item #8 - " + item8;
+                        document.getElementById("itemSlot9").innerText = "Item #9 - " + item9;
+                        document.getElementById("itemSlot10").innerText = "Item #10 - " + item10;
+                        document.getElementById("itemSlot11").innerText = "Item #11 - " + item11;
+                        document.getElementById("itemSlot12").innerText = "Item #12 - " + item12;
+
 
 
 
