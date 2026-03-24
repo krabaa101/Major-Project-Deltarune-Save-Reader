@@ -2,14 +2,16 @@
 
 Work Log: Tuesday Feb 3
 Keegan
+
 * Created Github file
 * Created Github space
 * Added Kale to contributers
 
 Kale
+
 * Created first html site skeleton with comprehensive comments
 * Created kmekbeb branch and pushed
-  
+
 Work Log: Feb 10
 
 Keegan
@@ -25,6 +27,7 @@ Kale
 * Tinkered with databases and decided a no-database solutioun was the best for our case
 * Created README.md to guide Keegan through my ASP workspace
 * Researched YouTube videos and learnt how to convert C# objects to JSON
+
 
 
 Work Log: Feb 17
@@ -76,6 +79,7 @@ Keegan
 * Started Milestone Checks
 
 
+
 Work Log: Mar 17th-Mar 19th
 
 Keegan
@@ -83,7 +87,7 @@ Keegan
 * Added More CSS
 * Added inventory list
 * Started implementing milestone checks
-  
+
 Kale
 
 * Finished algorithm for displaying/iterating through save values
@@ -96,3 +100,14 @@ Kale
 
 * Fixed repeating if statements to display current room
 * Documented all steps with frequent commits and wrote comments to understand
+
+
+
+Work Log: Mar 24
+
+Keegan
+
+* Added boxes for items, weapons, and armour
+* Added boss milestones
+* Added Secret Checks
+
