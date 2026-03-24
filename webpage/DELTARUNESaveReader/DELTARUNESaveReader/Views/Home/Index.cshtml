@@ -156,18 +156,18 @@
 
                     <div class="armorHead"> Armours </div>
 
-                    <div class="armorSlot1"> <p>Armour</p> </div>
-                    <div class="armorSlot2"> <p>Armour</p> </div>
-                    <div class="armorSlot3"> <p>Armour</p> </div>
-                    <div class="armorSlot4"> <p>Armour</p> </div>
-                    <div class="armorSlot5"> <p>Armour</p> </div>
-                    <div class="armorSlot6"> <p>Armour</p> </div>
-                    <div class="armorSlot7"> <p>Armour</p> </div>
-                    <div class="armorSlot8"> <p>Armour</p> </div>
-                    <div class="armorSlot9"> <p>Armour</p> </div>
-                    <div class="armorSlot10"> <p>Armour</p> </div>
-                    <div class="armorSlot11"> <p>Armour</p> </div>
-                    <div class="armorSlot12"> <p>Armour</p> </div>
+                    <div class="armorSlot1"id="armorSlot1"> <p>Armour</p> </div>
+                    <div class="armorSlot2"id="armorSlot2"> <p>Armour</p> </div>
+                    <div class="armorSlot3"id="armorSlot3"> <p>Armour</p> </div>
+                    <div class="armorSlot4"id="armorSlot4"> <p>Armour</p> </div>
+                    <div class="armorSlot5"id="armorSlot5"> <p>Armour</p> </div>
+                    <div class="armorSlot6"id="armorSlot6"> <p>Armour</p> </div>
+                    <div class="armorSlot7"id="armorSlot7"> <p>Armour</p> </div>
+                    <div class="armorSlot8"id="armorSlot8"> <p>Armour</p> </div>
+                    <div class="armorSlot9"id="armorSlot9"> <p>Armour</p> </div>
+                    <div class="armorSlot10"id="armorSlot10"> <p>Armour</p> </div>
+                    <div class="armorSlot11"id="armorSlot11"> <p>Armour</p> </div>
+                    <div class="armorSlot12"id="armorSlot12"> <p>Armour</p> </div>
 
                     <div class="keyHead"> <h5>Key Items</h5> </div> <!--I am pretty sure there aren't more than 6 Key items you can hold at a time.-->
                     <div class="keySlot1"id="keySlot1"> <p>Key</p> </div>
@@ -298,6 +298,7 @@
                 // =================== Displaying Invetory Items ===================
                     console.log("Inventory Items")
                     
+                    // =================== Key Items =================== 
                     // Find Key Item #1
                     console.log("Key Items 1-12")
                     let keyItem1 = "?"
@@ -425,10 +426,11 @@
                     }
                     console.log("12: " + keyItem12);
 
+                    // =================== End of Key Items =================== 
 
                     console.log("=================")
                     
-                    // Weapons
+                    // =================== Weapons =================== 
                     console.log("Weapons 1-12")
 					let weapon1 = "?"
 					for (let weapon of dataNames.weaponsCh1){
@@ -538,13 +540,127 @@
 					}
 					console.log("12: " + weapon12);
 
+                    // =================== End of Weapons =================== 
+                    console.log("=================")
+                    // =================== Armour =================== 
+                    console.log("Armours 1-12")
+                    let armour1 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[238]))
+						{
+							armour1 = armour.text;
+						}
+					}
+					console.log("1: " + armour1);
 
+                                        let armour2 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[242]))
+						{
+							armour2 = armour.text;
+						}
+					}
+					console.log("2: " + armour2);
 
+                                        
+                                        let armour3 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[246]))
+						{
+							armour3 = armour.text;
+						}
+					}
+					console.log("3: " + armour3);
 
+                    
+                                        let armour4 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[250]))
+						{
+							armour4 = armour.text;
+						}
+					}
+					console.log("4: " + armour4);
 
+                    
+                                        let armour5 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[254]))
+						{
+							armour5 = armour.text;
+						}
+					}
+					console.log("5: " + armour5);
 
+                    
+                                        let armour6 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[258]))
+						{
+							armour6 = armour.text;
+						}
+					}
+					console.log("6: " + armour6);
 
+                    
+                                        let armour7 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[262]))
+						{
+							armour7 = armour.text;
+						}
+					}
+					console.log("7: " + armour7);
 
+                    
+                                        let armour8 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[266]))
+						{
+							armour8 = armour.text;
+						}
+					}
+					console.log("8: " + armour8);
+
+                    
+                                        let armour9 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[270]))
+						{
+							armour9 = armour.text;
+						}
+					}
+					console.log("9: " + armour9);
+
+                    
+                                        let armour10 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[274]))
+						{
+							armour10 = armour.text;
+						}
+					}
+					console.log("10: " + armour10);
+
+                    
+                                        let armour11 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[278]))
+						{
+							armour11 = armour.text;
+						}
+					}
+					console.log("11: " + armour11);
+
+                    
+                                        let armour12 = "?"
+					for (let armour of dataNames.armorCh1){
+						if (armour.value === parseInt(saveArray[282]))
+						{
+							armour12 = armour.text;
+						}
+					}
+					console.log("12: " + armour12);
 
                 // =================== End Displaying Invetory Items ===================
                     console.log("=================")
@@ -732,6 +848,22 @@
                         document.getElementById("weaponSlot10").innerText = "Weapon #10 - " + weapon10;
                         document.getElementById("weaponSlot11").innerText = "Weapon #11 - " + weapon11;
                         document.getElementById("weaponSlot12").innerText = "Weapon #12 - " + weapon12;
+
+
+                        // Armour (Inventory)
+                        document.getElementById("armorSlot1").innerText = "Armour #1 - " + armour1;
+                        document.getElementById("armorSlot2").innerText = "Armour #2 - " + armour2;
+                        document.getElementById("armorSlot3").innerText = "Armour #3 - " + armour3;
+                        document.getElementById("armorSlot4").innerText = "Armour #4 - " + armour4;
+                        document.getElementById("armorSlot5").innerText = "Armour #5 - " + armour5;
+                        document.getElementById("armorSlot6").innerText = "Armour #6 - " + armour6;
+                        document.getElementById("armorSlot7").innerText = "Armour #7 - " + armour7;
+                        document.getElementById("armorSlot8").innerText = "Armour #8 - " + armour8;
+                        document.getElementById("armorSlot9").innerText = "Armour #9 - " + armour9;
+                        document.getElementById("armorSlot10").innerText = "Armour #10 - " + armour10;
+                        document.getElementById("armorSlot11").innerText = "Armour #11 - " + armour11;
+                        document.getElementById("armorSlot12").innerText = "Armour #12 - " + armour12;
+
 
 
                     // Milestones
