@@ -208,3 +208,130 @@ p {
     border: 1px solid black;
     width: 500px;
 }
+
+.itemSlot1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 12;
+    grid-row-end: 12;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 12;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 13;
+    grid-row-end: 13;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot4 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 13;
+    grid-row-end: 13;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot5 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 14;
+    grid-row-end: 14;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot6 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 14;
+    grid-row-end: 14;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot7 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 15;
+    grid-row-end: 15;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot8 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 15;
+    grid-row-end: 15;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot9 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 16;
+    grid-row-end: 16;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot10 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 16;
+    grid-row-end: 16;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot11 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 17;
+    grid-row-end: 17;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.itemSlot12 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 17;
+    grid-row-end: 17;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.weaponHead {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 18;
+    grid-row-end: 18;
+    border: 1px solid black;
+    width: 500px;
+    background-color: lightgray;
+}
+
+.weaponSlot1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 19;
+    grid-row-end: 19;
+    border: 1px solid black;
+    width: 250px;
+}
