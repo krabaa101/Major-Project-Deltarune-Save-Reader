@@ -164,6 +164,14 @@
                     <h4>Major Milestones</h4>
                     <p id="tutDisplay"></p>
                 </div>
+
+                <div class="secrets">
+                    <h4>Secrets</h4>
+                    <p id="starwalker">???</p>
+                    <p id="returnCake">???</p>
+                    <p id="mysteryEgg">???</p>
+                    <p id="secretBoss">???</p>
+                </div>
             </div>
         </div>
     
@@ -227,35 +235,112 @@
                     // Main Story Progress / Bosses Beaten !!
                 let tutorial = parseInt(saveArray[522]);
                 let tutText = "test";
-                if (tutorial = 1)
+                if (tutorial == 1)
                 { // Tutorial Complete (Could not find check for beating Lancer 1)
-                    tutText = "Tutorial: Complete";
+                    tutText = "Tutorial: Complete ";
 
                     let boss1 = parseInt(saveArray[530]);
                     if (boss1 != 0)
                     {
-                        tutText += "  K.Round: Beaten";
-                        let boss2 = parseInt([550]);
-                        if (boss2 = 1)
+                        tutText += "  K. Round: Beaten ";
+                        let boss2 = parseInt(saveArray[550]);
+                        if (boss2 == 1)
                         {
-                            tutText += "  Clover: Beaten"
+                            tutText += "Clover: Beaten \r\n";
+
+                            let boss3 = parseInt(saveArray[545]);
+                            
+                            if (boss3 != 0)
+                            {
+                                tutText += "Susie & Lancer: Beaten \r\n";
+
+                                let boss4 = parseInt(saveArray[556]);
+                                if (boss4 == 1)
+                                {
+                                    tutText += "K. Round 2: Beaten \r\n";
+
+                                    let boss5 = parseInt(saveArray[345]);
+                                    if (boss5 == 1)
+                                    {
+                                        tutText += "King: Defeated!"
+                                    }
+                                    else { tutText += "Final Boss: Incomplete"; }
+                                }
+                                else { tutText += "Boss 4: Incomplete"; }
+                            }
+
+                            else
+                            {
+                                tutText += "Boss 3: Incomplete ";
+                            }
                         }
                         else
                         {
-                            tutText += "  Boss 2: Incomplete"
+                            tutText += "Boss 2: Incomplete ";
                         }
                     }
                     else
                     {
-                        tutText += "  Boss 1: Incomplete";
+                        tutText += "Boss 1: Incomplete ";
                     }
                 }
-                else if (tutorial = 0)
+                else if (tutorial == 0)
                 {
-                    tutText = "Tutorial: Incomplete";
+                    tutText = "Tutorial: Incomplete ";
                 }
 
                 
+                //Secrets
+                let starTalk = parseInt(saveArray[570]);
+                let starTalker = "Secret 1: in the star bird room, after ringing the bell, go back.";
+                if (starTalk == 1)
+                {
+                    starTalker = "Starwalker Found!";
+                }
+                else if (starTalk == 0)
+                {
+                    starTalker = "Secret 1: in the star bird room, after ringing the bell, go back.";
+                }
+
+                //Cake Secret
+                let cake = parseInt(saveArray[569]);
+                let cakeText = "Secret 2: Don't eat the cake! Instead, fix it, then return it to who made it.";
+                if (cake == 1)
+                {
+                    cakeText = "Returned the cake to the Top Chef!";
+                }
+                else if (cake == 0)
+                {
+                    cakeText = "Secret 2: Don't eat the cake! Instead, fix it, then return it to who made it.";
+                }
+
+                //Egg Secret
+                let egg = parseInt(saveArray[1226]);
+                let eggText = "???";
+                if (egg == 2)
+                {
+                    eggText = "Egg: Collected!";
+                }
+                else if (egg == 0)
+                {
+                    eggText = "Secret 3: Walk back and forth between the bird room and spinning diamond room."
+                }
+
+                // Jevil
+                let boss6 = parseInt(saveArray[557]);
+                let bossText = "???"
+                if (boss6 == 6)
+                {
+                    bossText = "Jevil: Beaten!";
+                }
+                else if (boss6 == 7)
+                {
+                    bossText = "Jevil: Spared!";
+                }
+                else
+                {
+                    bossText = "Secret 4: Find the three broken key pieces, fix them, then go to the castle basement."
+                }
 
 
                 // Kris Stats
@@ -416,6 +501,12 @@
 
                     // Milestones
                     document.getElementById("tutDisplay").innerText = tutText;
+
+                    // Secrets
+                    document.getElementById("starwalker").innerText = starTalker;
+                    document.getElementById("returnCake").innerText = cakeText;
+                    document.getElementById("mysteryEgg").innerText = eggText;
+                    document.getElementById("secretBoss").innerText = bossText;
             });
 
            
