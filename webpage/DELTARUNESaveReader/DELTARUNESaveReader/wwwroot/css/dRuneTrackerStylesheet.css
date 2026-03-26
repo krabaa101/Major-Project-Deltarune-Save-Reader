@@ -3,6 +3,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Courier New', monospace;
+    display: flex;
 }
 
 /* Center content */
@@ -117,4 +118,34 @@ input, button {
         background: white;
         color: black;
         cursor: pointer;
+    }
+
+.side {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+    /* Left side */
+    .side.left {
+        left: 0;
+    }
+
+    /* Right side */
+    .side.right {
+        right: 0;
+    }
+
+    .side img {
+        width: 100%;
+        height: 100vh;
+        display: block;
+       
+    }
+
+    .side.left, .side.right {
+        width: 15%; /* each side takes half the screen */
+        float: left; /* sit side by side */
     }
