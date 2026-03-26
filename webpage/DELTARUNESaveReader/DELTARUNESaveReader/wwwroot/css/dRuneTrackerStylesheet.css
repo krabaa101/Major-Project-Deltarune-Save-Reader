@@ -44,7 +44,9 @@ h1, h2 {
 /* Section headers */
 .inventoryHead,
 .itemHead,
-.weaponHead {
+.weaponHead,
+.armorHead,
+.keyHead{
     grid-column: span 2;
     text-align: center;
     border-bottom: 2px solid white;
@@ -61,16 +63,34 @@ h1, h2 {
 }
 
 /* Slots */
+
+/*Party Members*/
 .krisSlot1, .krisSlot2, .krisSlot3,
 .susieSlot1, .susieSlot2, .susieSlot3,
 .ralseiSlot1, .ralseiSlot2, .ralseiSlot3,
+
+/*Items*/
 .itemSlot1, .itemSlot2, .itemSlot3, .itemSlot4,
 .itemSlot5, .itemSlot6, .itemSlot7, .itemSlot8,
 .itemSlot9, .itemSlot10, .itemSlot11, .itemSlot12,
-.weaponSlot1 {
-    border: 1px solid white;
-    padding: 8px;
-    text-align: center;
+
+/*Weapons*/
+.weaponSlot1, .weaponSlot2, .weaponSlot3, .weaponSlot4,
+.weaponSlot5, .weaponSlot6, .weaponSlot7, .weaponSlot8,
+.weaponSlot9, .weaponSlot10, .weaponSlot11, .weaponSlot12,
+
+/*Armour*/
+.armorSlot1, .armorSlot2, .armorSlot3, .armorSlot4,
+.armorSlot5, .armorSlot6, .armorSlot7, .armorSlot8,
+.armorSlot9, .armorSlot10, .armorSlot11, .armorSlot12,
+
+/*Key Items*/
+.keySlot1, .keySlot2, .keySlot3, .keySlot4,
+.keySlot5, .keySlot6, .keySlot7, .keySlot8,
+.keySlot9, .keySlot10, .keySlot11, .keySlot12{
+border: 1px solid white;
+padding: 8px;
+text-align: center;
 }
 
 /* Remove ALL colors */
