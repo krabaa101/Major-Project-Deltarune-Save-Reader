@@ -27,21 +27,16 @@
 
                 <span class="tooltips-text" id="save-location-input-tooltips">
                     <br> <!-- Add JS on-hover for tooltips-text class -->
-                    "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
+                    <p>Triple click and CTRL+C to copy to clipboard </p> <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
+                    <p>Then press WIN+R and paste the filepath to locate your save file." </p>
                 </span>
             </div>
 
             <p class="smalltext">
                 Choose
                 <strong>filech1_#</strong>
-                then drag and drop, or select directly in the box below.
+                then select "Choose file" directly in the box below.
             </p>
-
-            <p class="smalltext">
-                The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
-            </p>
-
-            <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
 
             <p></p> <!--Empty paragraph for spacing.-->
 
@@ -50,6 +45,11 @@
                 <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
                 <input id="saveInput" type="file" accept="file/*" value="">
 
+                <p class="smalltext">
+                    The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
+                </p>
+
+                <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
                 <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
                 <p id="saveConfirmer">No file input yet.</p>
 
