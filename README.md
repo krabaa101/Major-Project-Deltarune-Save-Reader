@@ -119,3 +119,7 @@ Kale
 * Displayed more inventory items (Items 1-12)
 * Displayed all key items (1-12)
 * Added way cleaner comments and console logging
+
+Work Log: Mar 25
+* Testing new CSS layout using ChatGPT
+* Prompt: "revamp all the CSS and make the website look clean: * Black and White DELTARUNE style * Use a funky cartoonish font - creepyish style * Display all of the information in an organized fashion".
