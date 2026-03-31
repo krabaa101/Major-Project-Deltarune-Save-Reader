@@ -454,7 +454,7 @@ export var party_members = [
     { value: 3, text: `Ralsei` },
     { value: 4, text: `Noelle` }
 ];
-//Not in ch1
+
 export var recruits = [
     { value: 0, text: "Known Quantity 0" },
     { value: 1, text: "Known Quantity 1" },
@@ -507,7 +507,7 @@ export var recruits = [
     { value: 48, text: "Known Quantity 48" },
     { value: 49, text: "Known Quantity 49" }
 ];
-//Not in ch1
+
 export var unused_recruits = [
     0, 1, 2, 3, 4, 7, 8, 9, 10, 12, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 29, 37, 38, 39, 41, 43, 45, 46, 47, 48, 49
 ];
