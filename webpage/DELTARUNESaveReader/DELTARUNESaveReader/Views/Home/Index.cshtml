@@ -15,60 +15,172 @@
 </head>
 <body>
     <div id="content">
-        <h1 id="h1-title">Save Completion Tracker</h1>
-        <h2 id="h2-subtitle">For Deltarune</h2>
+        <div id="inputBox">
+            <h1 id="h1-title">Save Completion Tracker</h1>
+            <h2 id="h2-subtitle">For Deltarune</h2>
 
-        <p class="smalltext"><!-- write banner of hrefs here: steam guide, github --></p>
+            <p class="smalltext"><!-- write banner of hrefs here: steam guide, github --></p>
 
-        <div class="tooltips">
+            <div class="tooltips">
             <!-- pasteable path for "noob users." -->
-            <input id="save-location-input" value="%LOCALAPPDATA%\DELTARUNE" readonly="readonly">
+                <input id="save-location-input" value="%LOCALAPPDATA%\DELTARUNE" readonly="readonly">
 
-            <span class="tooltips-text" id="save-location-input-tooltips">
-                <br> <!-- Add JS on-hover for tooltips-text class -->
-                "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
-            </span>
-        </div>
+                <span class="tooltips-text" id="save-location-input-tooltips">
+                    <br> <!-- Add JS on-hover for tooltips-text class -->
+                    "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
+                </span>
+            </div>
 
-        <p class="smalltext">
-            Choose
-            <strong>filech1_#</strong>
-            then drag and drop, or select directly in the box below.
-        </p>
+            <p class="smalltext">
+                Choose
+                <strong>filech1_#</strong>
+                then drag and drop, or select directly in the box below.
+            </p>
 
-        <p class="smalltext">
-            The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
-        </p>
+            <p class="smalltext">
+                The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
+            </p>
 
-        <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
+            <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
 
-        <p></p> <!--Empty paragraph for spacing.-->
+            <p></p> <!--Empty paragraph for spacing.-->
 
-        <div id="save-file-input">
+            <div id="save-file-input">
 
-            <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
-            <input id="saveInput" type="file" accept="file/*" value="">
+                <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
+                <input id="saveInput" type="file" accept="file/*" value="">
 
-            <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
-            <p id="saveConfirmer">No file input yet.</p>
+                <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
+                <p id="saveConfirmer">No file input yet.</p>
 
-            <!-- Button to confirm file (I attempted to make a localStorage value that holds the filepath, but apparently input type: file values use a fakepath to keep user filepaths private.) -->
-            <button id="confirmButton">Confirm!</button>
-        </div>
+                <!-- Button to confirm file (I attempted to make a localStorage value that holds the filepath, but apparently input type: file values use a fakepath to keep user filepaths private.) -->
+                <button id="confirmButton">Confirm!</button>
+            </div>
 
-        <div id="ResultDiv">
+        
             <h2 id="h2-game-status">Game completion status:</h2> <!--  Add % variable through JS here (float) -->
-
-
-            <p id="timeText">Time Played: </p> <!--JS displays data here-->
-            <!--More Random Fun save facts here:-->
-            <p id="fileName">Name: </p>
-            <p id="playerStats">Player stats: </p>
-            <p id="currentRoom">Current Room: </p>
         </div>
-    </div>
 
-    <script>
+            <!--JS displays data here-->
+            <!--More Random Fun save facts here:-->
+        <div class="saveDisplay">
+                <div class="statBox"> <!--Save File Stats-->
+                    <h4> Stats & Save Information</h4>
+                   
+                    <p id="timeText">Time Played: ?</p>
+
+
+                    <p id="fileName">Name: ?</p>
+                    
+
+                    <div id="playerStats">
+                        <p id="playerLevel">?</p>
+                        <p id="playerMoney">?</p>
+                        <p id="playerXp">?</p>
+                    </div>
+
+
+                    <p id="currentRoom">Current Room: ?</p>
+
+                </div>
+
+                <div class="inventory"> <!--Save Inventory-->
+                    <div class="inventoryHead"> <h4>Inventory</h4> </div>
+
+                    <div class="krisHead"> <h5>Kris</h5> </div>
+
+                    <div class="krisSlot1" id="krisSlot1"> <p>Kris' Weapon</p> </div>
+                    <div class="krisSlot2" id="krisSlot2"> <p>Kris' Armor 1</p> </div>
+                    <div class="krisSlot3" id="krisSlot3"> <p>Kris' Armor 2</p> </div>
+
+                    <div class="susieHead"> <h5>Susie</h5> </div>
+
+                    <div class="susieSlot1" id="susieSlot1"> <p>Susie's Weapon</p> </div>
+                    <div class="susieSlot2" id="susieSlot2"> <p>Susie's Armour 1</p> </div>
+                    <div class="susieSlot3" id="susieSlot3"> <p>Susie's Armour 2</p> </div>
+
+                    <div class="ralseiHead"> <h5>Ralsei</h5> </div>
+
+                    <div class="ralseiSlot1" id="ralseiSlot1"> <p>Ralsei's Weapon</p> </div>
+                    <div class="ralseiSlot2" id="ralseiSlot2"> <p>Ralsei's Armour 1</p> </div>
+                    <div class="ralseiSlot3" id="ralseiSlot3"> <p>Ralsei's Armour 2</p> </div>
+
+                    <div class="itemHead"> <h5>Items</h5> </div>
+
+                    <div class="itemSlot1"> <p>Item</p> </div>
+                    <div class="itemSlot2"> <p>Item</p> </div>
+                    <div class="itemSlot3"> <p>Item</p> </div>
+                    <div class="itemSlot4"> <p>Item</p> </div>
+                    <div class="itemSlot5"> <p>Item</p> </div>
+                    <div class="itemSlot6"> <p>Item</p> </div>
+                    <div class="itemSlot7"> <p>Item</p> </div>
+                    <div class="itemSlot8"> <p>Item</p> </div>
+                    <div class="itemSlot9"> <p>Item</p> </div>
+                    <div class="itemSlot10"> <p>Item</p> </div>
+                    <div class="itemSlot11"> <p>Item</p> </div>
+                    <div class="itemSlot12"> <p>Item</p> </div>
+
+
+                    <div class="weaponHead" id="weaponHead"> <h5>Weapons</h5> </div>
+
+                    <div class="weaponSlot1"> <p>Weapon</p> </div>
+                    <div class="weaponSlot2"> <p>Weapon</p> </div>
+                    <div class="weaponSlot3"> <p>Weapon</p> </div>
+                    <div class="weaponSlot4"> <p>Weapon</p> </div>
+                    <div class="weaponSlot5"> <p>Weapon</p> </div>
+                    <div class="weaponSlot6"> <p>Weapon</p> </div>
+                    <div class="weaponSlot7"> <p>Weapon</p> </div>
+                    <div class="weaponSlot8"> <p>Weapon</p> </div>
+                    <div class="weaponSlot9"> <p>Weapon</p> </div>
+                    <div class="weaponSlot10"> <p>Weapon</p> </div>
+                    <div class="weaponSlot11"> <p>Weapon</p> </div>
+                    <div class="weaponSlot12"> <p>Weapon</p> </div>
+
+                    <div class="armorHead"> Armours </div>
+
+                    <div class="armorSlot1"> <p>Armour</p> </div>
+                    <div class="armorSlot2"> <p>Armour</p> </div>
+                    <div class="armorSlot3"> <p>Armour</p> </div>
+                    <div class="armorSlot4"> <p>Armour</p> </div>
+                    <div class="armorSlot5"> <p>Armour</p> </div>
+                    <div class="armorSlot6"> <p>Armour</p> </div>
+                    <div class="armorSlot7"> <p>Armour</p> </div>
+                    <div class="armorSlot8"> <p>Armour</p> </div>
+                    <div class="armorSlot9"> <p>Armour</p> </div>
+                    <div class="armorSlot10"> <p>Armour</p> </div>
+                    <div class="armorSlot11"> <p>Armour</p> </div>
+                    <div class="armorSlot12"> <p>Armour</p> </div>
+
+                    <div class="keyHead"> <h5>Key Items</h5> </div> <!--I am pretty sure there aren't more than 6 Key items you can hold at a time.-->
+                    <div class="keySlot1"> <p>Key</p> </div>
+                    <div class="keySlot2"> <p>Key</p> </div>
+                    <div class="keySlot3"> <p>Key</p> </div>
+                    <div class="keySlot4"> <p>Key</p> </div>
+                    <div class="keySlot5"> <p>Key</p> </div>
+                    <div class="keySlot6"> <p>Key</p> </div>
+                </div>
+
+                <div class="milestones">
+                    <h4>Major Milestones</h4>
+                    <p id="tutDisplay"></p>
+                </div>
+
+                <div class="secrets">
+                    <h4>Secrets</h4>
+                    <p id="starwalker">???</p>
+                    <p id="returnCake">???</p>
+                    <p id="mysteryEgg">???</p>
+                    <p id="secretBoss">???</p>
+                </div>
+            </div>
+        </div>
+    
+
+    <script type="module"> 
+        
+        //import dataNames.js PATH = '/wwwroot/js/dataNames.js
+        import * as dataNames from '../js/dataNames.js'   
+
         const docIdGet = document.getElementById;
         const input = document.getElementById('saveInput');
         const inButton = document.getElementById("confirmButton");
@@ -99,106 +211,311 @@
                 const xp = parseInt(saveArray[11]);
                 const lv = parseInt(saveArray[12]);
 
-                //Room Code (First If statement is just there for easy collapsing, don't mind it.)
-                const room = parseInt(saveArray[10316])
-                let roomname = "Test room"
-                if (room != 0)
+
+                // Current Room
+                
+                // initialize room name to "?" as a default, used if no room name is found
+                let currentRoom = "?"
+                    // loop through each room in roomsCh1 object
+                    for (let room of dataNames.roomsCh1)
+                    {   // trying room value minus 10001, since line 10317 says '10407' and the lowest num room in dataNames.js is 416
+                        if (room.value === parseInt(saveArray[10316]) - 10001)
+                        {
+                            currentRoom = room.text;
+                        }
+                        console.log(currentRoom)
+
+                    }          
+            
+                
+                    
+                    
+                    
+                    
+                    // Main Story Progress / Bosses Beaten !!
+                let tutorial = parseInt(saveArray[522]);
+                let tutText = "test";
+                if (tutorial == 1)
+                { // Tutorial Complete (Could not find check for beating Lancer 1)
+                    tutText = "Tutorial: Complete ";
+
+                    let boss1 = parseInt(saveArray[530]);
+                    if (boss1 != 0)
                     {
-                        if (room == 10316)
+                        tutText += "  K. Round: Beaten ";
+                        let boss2 = parseInt(saveArray[550]);
+                        if (boss2 == 1)
                         {
-                            roomname = "??????";
+                            tutText += "Clover: Beaten \r\n";
+
+                            let boss3 = parseInt(saveArray[545]);
+                            
+                            if (boss3 != 0)
+                            {
+                                tutText += "Susie & Lancer: Beaten \r\n";
+
+                                let boss4 = parseInt(saveArray[556]);
+                                if (boss4 == 1)
+                                {
+                                    tutText += "K. Round 2: Beaten \r\n";
+
+                                    let boss5 = parseInt(saveArray[345]);
+                                    if (boss5 == 1)
+                                    {
+                                        tutText += "King: Defeated!"
+                                    }
+                                    else { tutText += "Final Boss: Incomplete"; }
+                                }
+                                else { tutText += "Boss 4: Incomplete"; }
+                            }
+
+                            else
+                            {
+                                tutText += "Boss 3: Incomplete ";
+                            }
                         }
-                        if (room == 10321)
+                        else
                         {
-                            roomname = "Eye Puzzle";
-                        }
-                        if (room == 10326)
-                        {
-                            roomname = "Castle Town";
-                        }
-                        if (room == 10330)
-                        {
-                            roomname = "Great Door";
-                        }
-                        if (room == 10337)
-                        {
-                            roomname = "Maze of Death";
-                        }
-                        if (room == 10340)
-                        {
-                            roomname = "Seam's Shop";
-                        }
-                        if (room == 10349)
-                        {
-                            roomname = "Great Board";
-                        }
-                        if (room == 10352)
-                        {
-                            roomname = "Great Board 2";
-                        }
-                        if (room == 10354)
-                        {
-                            roomname = "Forest Entrance";
-                        }
-                        if (room == 10363)
-                        {
-                            roomname = "Bake Sale";
-                        }
-                        if (room == 10371)
-                        {
-                            roomname = "Forest Maze";
-                        }
-                        if (room == 10377)
-                        {
-                            roomname = "After Maze";
-                        }
-                        if (room == 10378)
-                        {
-                            roomname = "Thrashing Room";
-                        }
-                        if (room == 10388)
-                        {
-                            roomname = "Card Castle Prison";
-                        }
-                        if (room == 10392)
-                        {
-                            roomname = "Card Castle Basement";
-                        }
-                        if (room == 10395)
-                        {
-                            roomname = "Card Castle 1F";
-                        }
-                        if (room == 10404)
-                        {
-                            roomname = "Card Castle 5F";
-                        }
-                        if (room == 10407)
-                        {
-                            roomname = "Card Castle Throne Room";
+                            tutText += "Boss 2: Incomplete ";
                         }
                     }
-
-                // Progress / Bosses Beaten !!
-                let tutorial = parseInt(saveArray[522]);
-                let tutText = "";
-                if (tutorial = 1)
-                { // Tutorial Complete (Could not find check for beating Lancer 1)
-                    tutText = "Tutorial: Complete";
+                    else
+                    {
+                        tutText += "Boss 1: Incomplete ";
+                    }
                 }
-                else if (tutorial = 0)
+                else if (tutorial == 0)
                 {
-                    tutText = "Tutorial: Incomplete";
+                    tutText = "Tutorial: Incomplete ";
                 }
 
-                // displaying information
-                document.getElementById("fileName").innerText = "Name: " + saveArray[0];
-                document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
-                document.getElementById("playerStats").innerText = "Level: " + lv + " || " + "XP: " + xp + " || " + "Money: " + money;
-                document.getElementById("currentRoom").innerText = "Current Room: " + roomname;
+                
+                //Secrets
+                let starTalk = parseInt(saveArray[570]);
+                let starTalker = "Secret 1: in the star bird room, after ringing the bell, go back.";
+                if (starTalk == 1)
+                {
+                    starTalker = "Starwalker Found!";
+                }
+                else if (starTalk == 0)
+                {
+                    starTalker = "Secret 1: in the star bird room, after ringing the bell, go back.";
+                }
+
+                //Cake Secret
+                let cake = parseInt(saveArray[569]);
+                let cakeText = "Secret 2: Don't eat the cake! Instead, fix it, then return it to who made it.";
+                if (cake == 1)
+                {
+                    cakeText = "Returned the cake to the Top Chef!";
+                }
+                else if (cake == 0)
+                {
+                    cakeText = "Secret 2: Don't eat the cake! Instead, fix it, then return it to who made it.";
+                }
+
+                //Egg Secret
+                let egg = parseInt(saveArray[1226]);
+                let eggText = "???";
+                if (egg == 2)
+                {
+                    eggText = "Egg: Collected!";
+                }
+                else if (egg == 0)
+                {
+                    eggText = "Secret 3: Walk back and forth between the bird room and spinning diamond room."
+                }
+
+                // Jevil
+                let boss6 = parseInt(saveArray[557]);
+                let bossText = "???"
+                if (boss6 == 6)
+                {
+                    bossText = "Jevil: Beaten!";
+                }
+                else if (boss6 == 7)
+                {
+                    bossText = "Jevil: Spared!";
+                }
+                else
+                {
+                    bossText = "Secret 4: Find the three broken key pieces, fix them, then go to the castle basement."
+                }
 
 
+                // Kris Stats
+
+                    // Displaying Kris Weapon
+                           let krisWeapon = "?";
+                           for (let weapon of dataNames.weaponsCh1)
+                           {
+                               if (weapon.value === parseInt(saveArray[76]))
+                               {
+                                   krisWeapon = weapon.text;
+                               }
+                           }
+
+                           console.log(krisWeapon);
+                           
+                   // Displaying Kris Armour 1
+                           let krisArmor1 = "?";
+                           for (let armor of dataNames.armorCh1)
+                           {
+                               if (armor.value === parseInt(saveArray[77]))
+                               {
+                                   krisArmor1 = armor.text;
+                               }
+                           }
+
+                           console.log(krisArmor1);
+
+                    // Displaying Kris Armour 2
+
+                           let krisArmor2 = "?";
+                           for (let armor of dataNames.armorCh1)
+                           {
+                               if (armor.value === parseInt(saveArray[78]))
+                               {
+                                   krisArmor2 = armor.text;
+                               }
+                           }
+
+                           console.log(krisArmor2);
+
+
+
+                // Susie Stats
+                 
+                    // Displaying Susie Weapon
+                               let susieWeapon = "?";
+                               for (let weapon of dataNames.weaponsCh1)
+                               {
+                                   if (weapon.value === parseInt(saveArray[130]))
+                                   {
+                                       susieWeapon = weapon.text;
+                                   }
+                               }
+
+                               console.log(susieWeapon);
+                           
+                       // Displaying susie Armour 1
+                               let susieArmor1 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[131]))
+                                   {
+                                       susieArmor1 = armor.text;
+                                   }
+                               }
+
+                               console.log(susieArmor1);
+
+                        // Displaying susie Armour 2
+
+                               let susieArmor2 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[132]))
+                                   {
+                                       susieArmor2 = armor.text;
+                                   }
+                               }
+
+                               console.log(susieArmor2);
+
+
+
+
+                                               // Susie Stats
+                 
+                    // Displaying Ralsei Weapon
+                               let ralseiWeapon = "?";
+                               for (let weapon of dataNames.weaponsCh1)
+                               {
+                                   if (weapon.value === parseInt(saveArray[184]))
+                                   {
+                                       ralseiWeapon = weapon.text;
+                                   }
+                               }
+
+                               console.log(ralseiWeapon);
+                           
+                       // Displaying Ralsei Armour 1
+                               let ralseiArmor1 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[185]))
+                                   {
+                                       ralseiArmor1 = armor.text;
+                                   }
+                               }
+
+                               console.log(ralseiArmor1);
+
+                        // Displaying Ralsei Armour 2
+
+                               let ralseiArmor2 = "?";
+                               for (let armor of dataNames.armorCh1)
+                               {
+                                   if (armor.value === parseInt(saveArray[186]))
+                                   {
+                                       ralseiArmor2 = armor.text;
+                                   }
+                               }
+
+                               console.log(ralseiArmor2);
+
+
+
+
+
+
+
+
+                // Save Stats
+                    
+                    // Stats & General Info
+                    document.getElementById("fileName").innerText = "Name: " + saveArray[0];
+                    document.getElementById("timeText").innerText = "Time Played: " +hour+":"+min+":"+sec;
+                    document.getElementById("playerLevel").innerText = "Level: " + lv;
+                    document.getElementById("playerMoney").innerText = "Money: " + money;
+                    document.getElementById("playerXp").innerText = "XP: " + xp;
+                    document.getElementById("currentRoom").innerText = "Current Room: " + currentRoom;
+
+                    // Kris
+                    document.getElementById("krisSlot1").innerText = "Kris' Weapon - " + krisWeapon;
+                    document.getElementById("krisSlot2").innerText = "Kris' Armor 1 - " + krisArmor1;
+                    document.getElementById("krisSlot3").innerText = "Kris' Armor 2 - " + krisArmor2;
+
+                    // susie
+                    document.getElementById("susieSlot1").innerText = "Susie' Weapon - " + susieWeapon;
+                    document.getElementById("susieSlot2").innerText = "Susie' Armor 1 - " + susieArmor1;
+                    document.getElementById("susieSlot3").innerText = "Susie' Armor 2 - " + susieArmor2;
+
+                    // ralsei
+                    document.getElementById("ralseiSlot1").innerText = "Ralsei' Weapon - " + ralseiWeapon;
+                    document.getElementById("ralseiSlot2").innerText = "Ralsei' Armor 1 - " + ralseiArmor1;
+                    document.getElementById("ralseiSlot3").innerText = "Ralsei' Armor 2 - " + ralseiArmor2;
+
+                    //Inventory
+
+                    // Milestones
+                    document.getElementById("tutDisplay").innerText = tutText;
+
+                    // Secrets
+                    document.getElementById("starwalker").innerText = starTalker;
+                    document.getElementById("returnCake").innerText = cakeText;
+                    document.getElementById("mysteryEgg").innerText = eggText;
+                    document.getElementById("secretBoss").innerText = bossText;
             });
 
+           
+            
+            
+            
+            
+            
+            
             if (saveFile.name.startsWith("filech1_") == true)
             {
                 document.getElementById("saveConfirmer").innerText = "Valid save file!";
