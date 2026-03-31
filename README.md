@@ -112,6 +112,7 @@ Keegan
 * Added Secret Checks
 
 
+
 Kale
 
 * Displayed more inventory items (Weapons 1-12)
@@ -121,5 +122,15 @@ Kale
 * Added way cleaner comments and console logging
 
 Work Log: Mar 25
+
 * Testing new CSS layout using ChatGPT
-* Prompt: "revamp all the CSS and make the website look clean: * Black and White DELTARUNE style * Use a funky cartoonish font - creepyish style * Display all of the information in an organized fashion".
+* Prompt: "revamp all the CSS and make the website look clean: \* Black and White DELTARUNE style \* Use a funky cartoonish font - creepyish style \* Display all of the information in an organized fashion".
+
+
+
+Work Log: Mar 31
+
+Keegan
+
+* Fixed wrong time played process to accurately display time of any file rather than just the sample
+
