@@ -111,3 +111,11 @@ Keegan
 * Added boss milestones
 * Added Secret Checks
 
+
+Kale
+
+* Displayed more inventory items (Weapons 1-12)
+* Displayed more inventory items (Armours 1-12)
+* Displayed more inventory items (Items 1-12)
+* Displayed all key items (1-12)
+* Added way cleaner comments and console logging
