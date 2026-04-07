@@ -14,6 +14,17 @@
 
 </head>
 <body>
+   
+    <!-- Left Side Photo -->
+    <div class="side left">
+        <img src="https://i.imgur.com/ILYIlNp.jpeg" alt="Left Photo">
+    </div>
+
+    <!-- Right Side Photo -->
+    <div class="side right">
+        <img src="https://i.imgur.com/f3ZGXeP.jpeg" alt="Right Photo">
+    </div>
+
     <div id="content">
         <div id="inputBox">
             <h1 id="h1-title">Save Completion Tracker</h1>
@@ -27,21 +38,15 @@
 
                 <span class="tooltips-text" id="save-location-input-tooltips">
                     <br> <!-- Add JS on-hover for tooltips-text class -->
-                    "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
+                    <p>Click once to copy to clipboard </p> <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
                 </span>
             </div>
 
             <p class="smalltext">
                 Choose
                 <strong>filech1_#</strong>
-                then drag and drop, or select directly in the box below.
+                then select "Choose file" & paste the copied file path. <br />
             </p>
-
-            <p class="smalltext">
-                The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
-            </p>
-
-            <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
 
             <p></p> <!--Empty paragraph for spacing.-->
 
@@ -50,6 +55,11 @@
                 <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
                 <input id="saveInput" type="file" accept="file/*" value="">
 
+                <p class="smalltext">
+                    The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
+                </p>
+
+                <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
                 <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
                 <p id="saveConfirmer">No file input yet.</p>
 
@@ -193,6 +203,24 @@
                 </div>
             </div>
         </div>
+
+   @*=================== Clipboard Copy Handler ===================
+     ============================================================== *@
+    <script>
+        const input = document.getElementById('save-location-input');
+        const tooltip = document.getElementById('save-location-input-tooltips');
+
+        input.addEventListener('click', function() {
+            navigator.clipboard.writeText(input.value).then(() => {
+                tooltip.innerHTML = '<br><p>Copied to clipboard!</p>';
+                setTimeout(() => {
+                    tooltip.innerHTML = '<br><p>Click once to copy to clipboard</p><p>Then press WIN+R and paste the filepath to locate your save file.</p>';
+                }, 2000);
+            });
+        });
+    </script>
+    @*=================== End of Clipboard Copy Handler ===================
+      ===================================================================== *@
     
 
     <script type="module"> 
@@ -217,15 +245,24 @@
                 saveReader.addEventListener("load", () => {
 
                 // assigning array indexes to variables
-                const saveArray = saveReader.result.split("\n");
+                                const saveArray = saveReader.result.split("\n");
                 let time = parseInt(saveArray[10317]) / 30;
                 time = Math.floor(time);
-                const sec = time - 14400 - 780;
-                let min = time - 14400 - 35;
-                min = min/60;
-                let hour = time - 780 - 35;
-                hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
+                let hour = time / 3600;
+                hour = Math.floor(hour);
+
+                let min = time - (hour*3600);
+                min = min/60;
+
+                min = Math.floor(min);
+
+                const sec = time - (hour*3600) - (min*60);
+
+                //let min = time - 14400 - 35;
+                //min = min/60;
+                //let hour = time - 780 - 35;
+                //hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
                 const money = parseInt(saveArray[10]);
                 const xp = parseInt(saveArray[11]);
