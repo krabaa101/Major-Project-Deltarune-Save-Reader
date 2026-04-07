@@ -254,6 +254,14 @@
 
                 let min = time - (hour*3600);
                 min = min/60;
+                min = Math.floor(min);
+
+                const sec = time - (hour*3600) - (min*60);
+                
+                //let min = time - 14400 - 35;
+                //min = min/60;
+                //let hour = time - 780 - 35;
+                //hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
                 min = Math.floor(min);
 
