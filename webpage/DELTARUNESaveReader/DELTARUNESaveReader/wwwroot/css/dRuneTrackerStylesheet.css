@@ -148,4 +148,5 @@ input, button {
     .side.left, .side.right {
         width: 15%; /* each side takes half the screen */
         float: left; /* sit side by side */
-    }
+    
+
