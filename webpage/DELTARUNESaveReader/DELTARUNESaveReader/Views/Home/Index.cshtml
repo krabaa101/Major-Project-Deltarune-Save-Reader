@@ -245,15 +245,24 @@
                 saveReader.addEventListener("load", () => {
 
                 // assigning array indexes to variables
-                const saveArray = saveReader.result.split("\n");
+                                const saveArray = saveReader.result.split("\n");
                 let time = parseInt(saveArray[10317]) / 30;
                 time = Math.floor(time);
-                const sec = time - 14400 - 780;
-                let min = time - 14400 - 35;
-                min = min/60;
-                let hour = time - 780 - 35;
-                hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
+                let hour = time / 3600;
+                hour = Math.floor(hour);
+
+                let min = time - (hour*3600);
+                min = min/60;
+
+                min = Math.floor(min);
+
+                const sec = time - (hour*3600) - (min*60);
+
+                //let min = time - 14400 - 35;
+                //min = min/60;
+                //let hour = time - 780 - 35;
+                //hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
                 const money = parseInt(saveArray[10]);
                 const xp = parseInt(saveArray[11]);
