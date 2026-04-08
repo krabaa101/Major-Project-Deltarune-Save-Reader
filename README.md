@@ -133,7 +133,6 @@ Kale
 * Tested transferring app to desktop, steered away from this approach.
 * Updated file directory instructions add onClick copy to clipboard event handler.
 * Solved merge conflicts from Keegan branch before pushing to main.
-* 
 
 Work Log: Apr 8
 Kale
