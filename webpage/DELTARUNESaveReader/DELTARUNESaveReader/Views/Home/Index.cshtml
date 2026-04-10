@@ -14,6 +14,17 @@
 
 </head>
 <body>
+   
+    <!-- Left Side Photo -->
+    <div class="side left">
+        <img src="https://i.imgur.com/ILYIlNp.jpeg" alt="Left Photo">
+    </div>
+
+    <!-- Right Side Photo -->
+    <div class="side right">
+        <img src="https://i.imgur.com/f3ZGXeP.jpeg" alt="Right Photo">
+    </div>
+
     <div id="content">
         <div id="inputBox">
             <h1 id="h1-title">Save Completion Tracker</h1>
@@ -27,21 +38,15 @@
 
                 <span class="tooltips-text" id="save-location-input-tooltips">
                     <br> <!-- Add JS on-hover for tooltips-text class -->
-                    "Click once to copy to clipboard" <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
+                    <p>Click once to copy to clipboard </p> <!-- Add JS on-click handler here, onclick copy to clipboard and change message to "Copied to clipboard"-->
                 </span>
             </div>
 
             <p class="smalltext">
                 Choose
                 <strong>filech1_#</strong>
-                then drag and drop, or select directly in the box below.
+                then select "Choose file" & paste the copied file path. <br />
             </p>
-
-            <p class="smalltext">
-                The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
-            </p>
-
-            <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
 
             <p></p> <!--Empty paragraph for spacing.-->
 
@@ -50,6 +55,11 @@
                 <!-- Add save file selection here eg. ("Drag and drop or select save file (use botton for select)" in a box.) -->
                 <input id="saveInput" type="file" accept="file/*" value="">
 
+                <p class="smalltext">
+                    The number on the save file is which slot the file is saved in, 0 being slot 1, 1 being 2, and 2 being 3.
+                </p>
+
+                <p class="smalltext">Don't use filech1_3, 1_4, 1_6 or 1_9. 3, 4, and 5 are completion data and 9 is last autosave.</p>
                 <!-- Informs user if file selected is a Deltarune Chapter 1 Save file (just checks filename) -->
                 <p id="saveConfirmer">No file input yet.</p>
 
@@ -112,76 +122,70 @@
 
                     
                     @* =================== Items Here =================== *@
-                    <div class="itemHead" id="itemHead"> <h5>Items</h5> </div>
-
+                    <div class="itemHead"> <h5>Items</h5> </div>
+                   
+                    <div class="itemSlot1" id="itemSlot1"> <p>Item</p> </div>
+                    <div class="itemSlot2" id="itemSlot2"> <p>Item</p> </div>
+                    <div class="itemSlot3" id="itemSlot3"> <p>Item</p> </div>
+                    <div class="itemSlot4" id="itemSlot4"> <p>Item</p> </div>
+                    <div class="itemSlot5" id="itemSlot5"> <p>Item</p> </div>
+                    <div class="itemSlot6" id="itemSlot6"> <p>Item</p> </div>
+                    <div class="itemSlot7" id="itemSlot7"> <p>Item</p> </div>
+                    <div class="itemSlot8" id="itemSlot8"> <p>Item</p> </div>
+                    <div class="itemSlot9" id="itemSlot9"> <p>Item</p> </div>
+                    <div class="itemSlot10" id="itemSlot10"> <p>Item</p> </div>
+                    <div class="itemSlot11" id="itemSlot11"> <p>Item</p> </div>
+                    <div class="itemSlot12" id="itemSlot12"> <p>Item</p> </div>
 
                         
                     @* =================== Weapons Here =================== *@
-                    <div class="weaponHead"> </div>
+                    <div class="weaponHead">Weapons</div>
+
+                    <div class="weaponSlot1" id="weaponSlot1"> <p>Weapon</p> </div>
+                    <div class="weaponSlot2" id="weaponSlot2"> <p>Weapon</p> </div>
+                    <div class="weaponSlot3" id="weaponSlot3"> <p>Weapon</p> </div>
+                    <div class="weaponSlot4" id="weaponSlot4"> <p>Weapon</p> </div>
+                    <div class="weaponSlot5" id="weaponSlot5"> <p>Weapon</p> </div>
+                    <div class="weaponSlot6" id="weaponSlot6"> <p>Weapon</p> </div>
+                    <div class="weaponSlot7" id="weaponSlot7"> <p>Weapon</p> </div>
+                    <div class="weaponSlot8" id="weaponSlot8"> <p>Weapon</p> </div>
+                    <div class="weaponSlot9" id="weaponSlot9"> <p>Weapon</p> </div>
+                    <div class="weaponSlot10" id="weaponSlot10"> <p>Weapon</p> </div>
+                    <div class="weaponSlot11" id="weaponSlot11"> <p>Weapon</p> </div>
+                    <div class="weaponSlot12" id="weaponSlot12"> <p>Weapon</p> </div>
                     
                     @* =================== Armour Here =================== *@
-                    <div class="armorHead"> </div>
+                    <div class="armorHead">Armour</div>
+
+                    <div class="armorSlot1" id="armorSlot1"> <p>Armour</p> </div>
+                    <div class="armorSlot2" id="armorSlot2"> <p>Armour</p> </div>
+                    <div class="armorSlot3" id="armorSlot3"> <p>Armour</p> </div>
+                    <div class="armorSlot4" id="armorSlot4"> <p>Armour</p> </div>
+                    <div class="armorSlot5" id="armorSlot5"> <p>Armour</p> </div>
+                    <div class="armorSlot6" id="armorSlot6"> <p>Armour</p> </div>
+                    <div class="armorSlot7" id="armorSlot7"> <p>Armour</p> </div>
+                    <div class="armorSlot8" id="armorSlot8"> <p>Armour</p> </div>
+                    <div class="armorSlot9" id="armorSlot9"> <p>Armour</p> </div>
+                    <div class="armorSlot10" id="armorSlot10"> <p>Armour</p> </div>
+                    <div class="armorSlot11" id="armorSlot11"> <p>Armour</p> </div>
+                    <div class="armorSlot12" id="armorSlot12"> <p>Armour</p> </div>
                     
                     @* =================== Key Items Here =================== *@
-                    <div class="keyHead"> </div>
+                    <div class="keyHead">Key Items</div>
 
-                    <div class="itemSlot1"id="itemSlot1"> <p>Item</p> </div>
-                    <div class="itemSlot2"id="itemSlot2"> <p>Item</p> </div>
-                    <div class="itemSlot3"id="itemSlot3"> <p>Item</p> </div>
-                    <div class="itemSlot4"id="itemSlot4"> <p>Item</p> </div>
-                    <div class="itemSlot5"id="itemSlot5"> <p>Item</p> </div>
-                    <div class="itemSlot6"id="itemSlot6"> <p>Item</p> </div>
-                    <div class="itemSlot7"id="itemSlot7"> <p>Item</p> </div>
-                    <div class="itemSlot8"id="itemSlot8"> <p>Item</p> </div>
-                    <div class="itemSlot9"id="itemSlot9"> <p>Item</p> </div>
-                    <div class="itemSlot10"id="itemSlot10"> <p>Item</p> </div>
-                    <div class="itemSlot11"id="itemSlot11"> <p>Item</p> </div>
-                    <div class="itemSlot12"id="itemSlot12"> <p>Item</p> </div>
-
-
-                    <div class="weaponHead" id="weaponHead"> <h5>Weapons</h5> </div>
-
-                    <div class="weaponSlot1"id="weaponSlot1"> <p>Weapon</p> </div>
-                    <div class="weaponSlot2"id="weaponSlot2" > <p>Weapon</p> </div>
-                    <div class="weaponSlot3"id="weaponSlot3"> <p>Weapon</p> </div>
-                    <div class="weaponSlot4"id="weaponSlot4"> <p>Weapon</p> </div>
-                    <div class="weaponSlot5"id="weaponSlot5"> <p>Weapon</p> </div>
-                    <div class="weaponSlot6"id="weaponSlot6" > <p>Weapon</p> </div>
-                    <div class="weaponSlot7"id="weaponSlot7" > <p>Weapon</p> </div>
-                    <div class="weaponSlot8"id="weaponSlot8"> <p>Weapon</p> </div>
-                    <div class="weaponSlot9"id="weaponSlot9"> <p>Weapon</p> </div>
-                    <div class="weaponSlot10"id="weaponSlot10"> <p>Weapon</p> </div>
-                    <div class="weaponSlot11"id="weaponSlot11"> <p>Weapon</p> </div>
-                    <div class="weaponSlot12"id="weaponSlot12"> <p>Weapon</p> </div>
-
-                    <div class="armorHead"> Armours </div>
-
-                    <div class="armorSlot1"id="armorSlot1"> <p>Armour</p> </div>
-                    <div class="armorSlot2"id="armorSlot2"> <p>Armour</p> </div>
-                    <div class="armorSlot3"id="armorSlot3"> <p>Armour</p> </div>
-                    <div class="armorSlot4"id="armorSlot4"> <p>Armour</p> </div>
-                    <div class="armorSlot5"id="armorSlot5"> <p>Armour</p> </div>
-                    <div class="armorSlot6"id="armorSlot6"> <p>Armour</p> </div>
-                    <div class="armorSlot7"id="armorSlot7"> <p>Armour</p> </div>
-                    <div class="armorSlot8"id="armorSlot8"> <p>Armour</p> </div>
-                    <div class="armorSlot9"id="armorSlot9"> <p>Armour</p> </div>
-                    <div class="armorSlot10"id="armorSlot10"> <p>Armour</p> </div>
-                    <div class="armorSlot11"id="armorSlot11"> <p>Armour</p> </div>
-                    <div class="armorSlot12"id="armorSlot12"> <p>Armour</p> </div>
-
-                    <div class="keyHead"> <h5>Key Items</h5> </div> <!--I am pretty sure there aren't more than 6 Key items you can hold at a time.-->
-                    <div class="keySlot1"id="keySlot1"> <p>Key</p> </div>
-                    <div class="keySlot2"id="keySlot2"> <p>Key</p> </div>
-                    <div class="keySlot3"id="keySlot3"> <p>Key</p> </div>
-                    <div class="keySlot4"id="keySlot4"> <p>Key</p> </div>
-                    <div class="keySlot5"id="keySlot5"> <p>Key</p> </div>
-                    <div class="keySlot6"id="keySlot6"> <p>Key</p> </div>
-                    <div class="keySlot7"id="keySlot7"> <p>Key</p> </div>
-                    <div class="keySlot8"id="keySlot8"> <p>Key</p> </div>
-                    <div class="keySlot9"id="keySlot9"> <p>Key</p> </div>
-                    <div class="keySlot10"id="keySlot10"> <p>Key</p> </div>
-                    <div class="keySlot11"id="keySlot11"> <p>Key</p> </div>
+                    <div class="keySlot1" id="keySlot1"> <p>Key</p> </div>
+                    <div class="keySlot2" id="keySlot2"> <p>Key</p> </div>
+                    <div class="keySlot3" id="keySlot3"> <p>Key</p> </div>
+                    <div class="keySlot4" id="keySlot4"> <p>Key</p> </div>
+                    <div class="keySlot5" id="keySlot5"> <p>Key</p> </div>
+                    <div class="keySlot6" id="keySlot6"> <p>Key</p> </div>
+                    <div class="keySlot7" id="keySlot7"> <p>Key</p> </div>
+                    <div class="keySlot8" id="keySlot8"> <p>Key</p> </div>
+                    <div class="keySlot9" id="keySlot9"> <p>Key</p> </div>
+                    <div class="keySlot10" id="keySlot10"> <p>Key</p> </div>
+                    <div class="keySlot11" id="keySlot11"> <p>Key</p> </div>
                     <div class="keySlot12" id="keySlot12"> <p>Key</p> </div>
+
 
                 </div>
 
@@ -199,6 +203,24 @@
                 </div>
             </div>
         </div>
+
+   @*=================== Clipboard Copy Handler ===================
+     ============================================================== *@
+    <script>
+        const input = document.getElementById('save-location-input');
+        const tooltip = document.getElementById('save-location-input-tooltips');
+
+        input.addEventListener('click', function() {
+            navigator.clipboard.writeText(input.value).then(() => {
+                tooltip.innerHTML = '<br><p>Copied to clipboard!</p>';
+                setTimeout(() => {
+                    tooltip.innerHTML = '<br><p>Click once to copy to clipboard</p><p>Then press WIN+R and paste the filepath to locate your save file.</p>';
+                }, 2000);
+            });
+        });
+    </script>
+    @*=================== End of Clipboard Copy Handler ===================
+      ===================================================================== *@
     
 
     <script type="module"> 
@@ -223,15 +245,32 @@
                 saveReader.addEventListener("load", () => {
 
                 // assigning array indexes to variables
-                const saveArray = saveReader.result.split("\n");
+                                const saveArray = saveReader.result.split("\n");
                 let time = parseInt(saveArray[10317]) / 30;
                 time = Math.floor(time);
-                const sec = time - 14400 - 780;
-                let min = time - 14400 - 35;
-                min = min/60;
-                let hour = time - 780 - 35;
-                hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
+                let hour = time / 3600;
+                hour = Math.floor(hour);
+
+                let min = time - (hour*3600);
+                min = min/60;
+                min = Math.floor(min);
+
+                const sec = time - (hour*3600) - (min*60);
+                
+                //let min = time - 14400 - 35;
+                //min = min/60;
+                //let hour = time - 780 - 35;
+                //hour = hour / 60 / 60; // used let instead of var as it's more efficient
+
+                min = Math.floor(min);
+
+                const sec = time - (hour*3600) - (min*60);
+
+                //let min = time - 14400 - 35;
+                //min = min/60;
+                //let hour = time - 780 - 35;
+                //hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
                 const money = parseInt(saveArray[10]);
                 const xp = parseInt(saveArray[11]);
@@ -444,7 +483,7 @@
                     // Find Key Item #6
                     let keyItem6 = "?"
                     for (let keyItem of dataNames.key_itemsCh1){
-                        if (keyItem.value === parseInt(saveArray[257]))
+                        if (keyItem.value === parseInt(saveArray[256]))
                         {
                             keyItem6 = keyItem.text;
                         }

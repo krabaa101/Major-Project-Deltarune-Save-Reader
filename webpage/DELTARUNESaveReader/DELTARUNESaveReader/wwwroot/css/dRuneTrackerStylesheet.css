@@ -1,337 +1,152 @@
 body {
     margin: 0;
-    font-family: Helvetica;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+    display: flex;
 }
 
+/* Center content */
 #content {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;    
+    padding: 20px;
 }
 
-#inputBox {
-    text-align: center;
-}
-
+/* Titles */
 h1, h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-.smalltext {
-    font-size: 14px;
-}
-
-#save-location-input {
     text-align: center;
-    margin: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
 }
 
-#save-file-input {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#saveConfirmer {
-    font-size: 14px;
-}
-
+/* Main container */
 .saveDisplay {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    background-color:aliceblue;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
+/* Stats */
 .statbox {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    padding: 20px;
-    
-    text-align: center;
-    border: 1px solid black;
+    border: 2px solid white;
+    padding: 15px;
+    background: #050505;
 }
 
+/* Inventory */
 .inventory {
-    padding: 10px;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    display: inline-grid;
-    border-width: 2px;
-    border-color: black;
-    grid-template-columns: auto auto;
-    padding: 20px;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.inventoryHead {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    border: 1px solid black;
-    width: 500px;
+/* Section headers */
+.inventoryHead,
+.itemHead,
+.weaponHead,
+.armorHead,
+.keyHead{
+    grid-column: span 2;
     text-align: center;
+    border-bottom: 2px solid white;
+    padding: 5px;
 }
 
-.krisHead {
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    background-color: lightskyblue;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.krisSlot1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    background-color: lightskyblue;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.krisSlot2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    background-color: lightskyblue;
-    border: 1px solid black;
-}
-
-.krisSlot3 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    background-color: lightskyblue;
-    border: 1px solid black;
-}
-
-.susieHead {
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 5;
-    grid-row-end: 8;
-    background-color: hotpink;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.susieSlot1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 5;
-    background-color: hotpink;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.susieSlot2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 6;
-    background-color: hotpink;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.susieSlot3 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 7;
-    background-color: hotpink;
-    border: 1px solid black;
-    width: 250px;
-}
-
+/* Character sections */
+.krisHead,
+.susieHead,
 .ralseiHead {
+    border: 2px solid white;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 8;
-    grid-row-end: 11;
-    background-color: lightgreen;
-    border: 1px solid black;
-    width: 250px;
+    font-weight: bold;
 }
 
-.ralseiSlot1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 8;
-    grid-row-end: 8;
-    background-color: lightgreen;
-    border: 1px solid black;
-    width: 250px;
+/* Slots */
+
+/*Party Members*/
+.krisSlot1, .krisSlot2, .krisSlot3,
+.susieSlot1, .susieSlot2, .susieSlot3,
+.ralseiSlot1, .ralseiSlot2, .ralseiSlot3,
+
+/*Items*/
+.itemSlot1, .itemSlot2, .itemSlot3, .itemSlot4,
+.itemSlot5, .itemSlot6, .itemSlot7, .itemSlot8,
+.itemSlot9, .itemSlot10, .itemSlot11, .itemSlot12,
+
+/*Weapons*/
+.weaponSlot1, .weaponSlot2, .weaponSlot3, .weaponSlot4,
+.weaponSlot5, .weaponSlot6, .weaponSlot7, .weaponSlot8,
+.weaponSlot9, .weaponSlot10, .weaponSlot11, .weaponSlot12,
+
+/*Armour*/
+.armorSlot1, .armorSlot2, .armorSlot3, .armorSlot4,
+.armorSlot5, .armorSlot6, .armorSlot7, .armorSlot8,
+.armorSlot9, .armorSlot10, .armorSlot11, .armorSlot12,
+
+/*Key Items*/
+.keySlot1, .keySlot2, .keySlot3, .keySlot4,
+.keySlot5, .keySlot6, .keySlot7, .keySlot8,
+.keySlot9, .keySlot10, .keySlot11, .keySlot12{
+border: 1px solid white;
+padding: 8px;
+text-align: center;
 }
 
-.ralseiSlot2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 9;
-    grid-row-end: 9;
-    background-color: lightgreen;
-    border: 1px solid black;
-    width: 250px;
+/* Remove ALL colors */
+.krisHead, .krisSlot1, .krisSlot2, .krisSlot3,
+.susieHead, .susieSlot1, .susieSlot2, .susieSlot3,
+.ralseiHead, .ralseiSlot1, .ralseiSlot2, .ralseiSlot3 {
+    background: #0a0a0a;
 }
 
-.ralseiSlot3 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 10;
-    grid-row-end: 10;
-    background-color: lightgreen;
-    border: 1px solid black;
-    width: 250px;
+/* Items layout fix */
+.itemSlot1, .itemSlot3, .itemSlot5, .itemSlot7, .itemSlot9, .itemSlot11 {
+    border-right: none;
 }
 
-.itemHead {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 11;
-    grid-row-end: 11;
-    background-color: lightgray;
-    border: 1px solid black;
-    width: 500px;
+/* Inputs */
+input, button {
+    background: black;
+    color: white;
+    border: 2px solid white;
+    padding: 6px;
 }
 
-.itemSlot1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 12;
-    grid-row-end: 12;
-    border: 1px solid black;
-    width: 250px;
+    button:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+    }
+
+.side {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.itemSlot2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 12;
-    grid-row-end: 12;
-    border: 1px solid black;
-    width: 250px;
-}
+    /* Left side */
+    .side.left {
+        left: 0;
+    }
 
-.itemSlot3 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 13;
-    grid-row-end: 13;
-    border: 1px solid black;
-    width: 250px;
-}
+    /* Right side */
+    .side.right {
+        right: 0;
+    }
 
-.itemSlot4 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 13;
-    grid-row-end: 13;
-    border: 1px solid black;
-    width: 250px;
-}
+    .side img {
+        width: 100%;
+        height: 100vh;
+        display: block;
+       
+    }
 
-.itemSlot5 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 14;
-    grid-row-end: 14;
-    border: 1px solid black;
-    width: 250px;
-}
+    .side.left, .side.right {
+        width: 15%; /* each side takes half the screen */
+        float: left; /* sit side by side */
+    
 
-.itemSlot6 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 14;
-    grid-row-end: 14;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.itemSlot7 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 15;
-    grid-row-end: 15;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.itemSlot8 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 15;
-    grid-row-end: 15;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.itemSlot9 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 16;
-    grid-row-end: 16;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.itemSlot10 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 16;
-    grid-row-end: 16;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.itemSlot11 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 17;
-    grid-row-end: 17;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.itemSlot12 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 17;
-    grid-row-end: 17;
-    border: 1px solid black;
-    width: 250px;
-}
-
-.weaponHead {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 18;
-    grid-row-end: 18;
-    border: 1px solid black;
-    width: 500px;
-    background-color: lightgray;
-}
-
-.weaponSlot1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 19;
-    grid-row-end: 19;
-    border: 1px solid black;
-    width: 250px;
-}
