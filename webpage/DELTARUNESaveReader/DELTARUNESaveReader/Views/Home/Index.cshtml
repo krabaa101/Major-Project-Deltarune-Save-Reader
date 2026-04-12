@@ -34,7 +34,7 @@
 
             <div class="tooltips">
             <!-- pasteable path for "noob users." -->
-                <input id="save-location-input" value="%LOCALAPPDATA%\DELTARUNE" readonly="readonly">
+                <button id="save-location-input">Click this to add the location save file location to clipboard</button>
 
                 <span class="tooltips-text" id="save-location-input-tooltips">
                     <br> <!-- Add JS on-hover for tooltips-text class -->
@@ -207,11 +207,11 @@
    @*=================== Clipboard Copy Handler ===================
      ============================================================== *@
     <script>
-        const input = document.getElementById('save-location-input');
+        const clipButton = document.getElementById('save-location-input');
         const tooltip = document.getElementById('save-location-input-tooltips');
 
-        input.addEventListener('click', function() {
-            navigator.clipboard.writeText(input.value).then(() => {
+        clipButton.addEventListener('click', function() {
+            navigator.clipboard.writeText("%LOCALAPPDATA%/DELTARUNE").then(() => {
                 tooltip.innerHTML = '<br><p>Copied to clipboard!</p>';
                 setTimeout(() => {
                     tooltip.innerHTML = '<br><p>Click once to copy to clipboard</p><p>Then press WIN+R and paste the filepath to locate your save file.</p>';
@@ -263,9 +263,9 @@
                 //let hour = time - 780 - 35;
                 //hour = hour / 60 / 60; // used let instead of var as it's more efficient
 
-                min = Math.floor(min);
+                //min = Math.floor(min);
 
-                const sec = time - (hour*3600) - (min*60);
+                //const sec = time - (hour*3600) - (min*60);
 
                 //let min = time - 14400 - 35;
                 //min = min/60;
@@ -313,13 +313,13 @@
                   
                 if (tutorial == 1)
                 { // Tutorial Complete (Could not find check for beating Lancer 1)
-                    tutText = "Tutorial: Complete ";
+                    tutText = "Tutorial: Complete \r\n";
 
 
                     let boss1 = parseInt(saveArray[530]);
                     if (boss1 != 0)
                     {
-                        tutText += "  K. Round: Beaten ";
+                        tutText += "K. Round: Beaten \r\n";
                         let boss2 = parseInt(saveArray[550]);
                         if (boss2 == 1)
                         {
