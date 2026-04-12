@@ -34,7 +34,8 @@
 
             <div class="tooltips">
             <!-- pasteable path for "noob users." -->
-                <button id="save-location-input">Click this to add the location save file location to clipboard</button>
+
+                <button id="save-location-btn" value="%LOCALAPPDATA%\DELTARUNE">Click here to copy your file path</button>
 
                 <span class="tooltips-text" id="save-location-input-tooltips">
                     <br> <!-- Add JS on-hover for tooltips-text class -->
@@ -207,7 +208,9 @@
    @*=================== Clipboard Copy Handler ===================
      ============================================================== *@
     <script>
-        const clipButton = document.getElementById('save-location-input');
+
+        const clipButton = document.getElementById('save-location-btn');
+
         const tooltip = document.getElementById('save-location-input-tooltips');
 
         clipButton.addEventListener('click', function() {
