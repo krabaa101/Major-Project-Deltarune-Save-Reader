@@ -124,6 +124,28 @@ Kale
 Work Log: Mar 25
 
 * Testing new CSS layout using ChatGPT
+<<<<<<< HEAD
+* Prompt: "revamp all the CSS aake the website look clean: \* Black and White DELTARUNE style \* Use a funky cartoonish font - creepyish style \* Display all of the information in an organized fashion".
+
+
+
+Work Log: Apr 7
+Kale
+
+* Tested transferring app to desktop, steered away from this approach.
+* Updated file directory instructions add onClick copy to clipboard event handler.
+* Solved merge conflicts from Keegan branch before pushing to main.
+
+
+
+Work Log: Apr 10-12
+
+Keegan
+
+  * Made presentation
+  * Fixed clipboard copier
+
+=======
 * Prompt: "revamp all the CSS aake the website look clean: * Black and White DELTARUNE style * Use a funky cartoonish font - creepyish style * Display all of the information in an organized fashion".
 nd m
 
@@ -137,3 +159,4 @@ Kale
 Work Log: Apr 8
 Kale
 * Added copy to clipboard button (hid the file path from the user).
+>>>>>>> 0d0587ea5a60d3b0867fb62ed2555bc80bc059ec
