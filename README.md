@@ -159,4 +159,3 @@ Kale
 Work Log: Apr 8
 Kale
 * Added copy to clipboard button (hid the file path from the user).
->>>>>>> 0d0587ea5a60d3b0867fb62ed2555bc80bc059ec
